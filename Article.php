@@ -31,9 +31,11 @@ $reponse = $bdd->query('SELECT Nom, ID FROM BaseDeDonnee');
 
 while ($donnees = $reponse->fetch())
 {  //on récupère le fichier correspondant
-	$dossier = substr($donnes['ID'], 0, 1);
+	$trans = array("0" => "", "1" => "", "2" => "", "3" => "", "4" => "", "5" => "", "6" => "", "7" => "", "8" => "", "9" => "");
+	$dossier = strtr($donnees['ID'],$trans);
+	
 // on affiche le nom du produit et son image
-	echo $donnees['Nom'] .  '<br />' . '<img src ="Materiel/' . $dossier . '/' .$donnes['ID'] . '/' .$donnes['ID'] . '.png" alt = "Image du produit: ' . $donnes['Nom'] . '"/> <br />' ;
+	echo $donnees['Nom'] .  '<br />' . '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpg" alt = "Image du produit: ' . $donnees['Nom'] . '"/> <br />' ;
 }
 
 $reponse->closeCursor();
