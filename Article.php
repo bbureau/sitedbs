@@ -15,10 +15,30 @@
 		</ul>
 	</div>
 	
-	
+	<!-- Affichons les articles de la base de données-->
+	<?php
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=Database;charset=utf8', 'root', 'root');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+
+$reponse = $bdd->query('SELECT Nom, ID FROM BaseDeDonnee');
+
+
+while ($donnees = $reponse->fetch())
+{  //on récupère le fichier correspondant
+	$dossier = substr($donnes['ID'], 0, 1);
+// on affiche le nom du produit et son image
+	echo $donnees['Nom'] .  '<br />' . '<img src ="Materiel/' . $dossier . '/' .$donnes['ID'] . '/' .$donnes['ID'] . '.png" alt = "Image du produit: ' . $donnes['Nom'] . '"/> <br />' ;
+}
+
+$reponse->closeCursor();
+
+?>
 	</body>
-
-
-
 
 </html>
