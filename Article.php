@@ -35,8 +35,9 @@ while ($donnees = $reponse->fetch())
 	$dossier = strtr($donnees['ID'],$trans);
 	
 // on affiche le nom du produit et son image
-	echo $donnees['Nom'] .  '<br />' . '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpg" alt = "Image du produit: ' . $donnees['Nom'] . '"/> <br />' ;
-}
+	echo $donnees['Nom'] .  '<br />' 
+	. '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' ;
+} //height et width définisse une taille standard pour les images
 
 $reponse->closeCursor();
 
