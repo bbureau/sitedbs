@@ -38,10 +38,10 @@ $donnees = $req->fetch();
  //height et width définisse une taille standard pour les images
 
 //4 les autre éléments
-	. $donnees['Categorie'] . '<br />'
-	. $donnees['Marque'] . '<br />'
-	. $donnees['Etat'] . '<br />'
-	. $donnees['Caution'] . '€ <br />' ;
+	. 'Categorie: ' . $donnees['Categorie'] . '<br />'
+	. 'Marque :' . $donnees['Marque'] . '<br />'
+	. 'Etat: ' . $donnees['Etat'] . '<br />'
+	. 'Caution: ' .$donnees['Caution'] . '€ <br />' ;
 
 ?>
 

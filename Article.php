@@ -34,9 +34,10 @@ while ($donnees = $reponse->fetch())
 	$trans = array("0" => "", "1" => "", "2" => "", "3" => "", "4" => "", "5" => "", "6" => "", "7" => "", "8" => "", "9" => "");
 	$dossier = strtr($donnees['ID'],$trans);
 	
-// on affiche le nom du produit et son image
-	echo $donnees['Nom'] .  '<br />' 
-	. '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' ;
+// on affiche le nom du produit, le nom est un lien vesr la page décrivant le produit
+	echo '<a href="PageArticle.php?ID=' . $donnees['ID'] . '">' . $donnees['Nom'] . '</a> <br />';
+	// on affiche l'image correspondante 
+	echo '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' ;
 } //height et width définisse une taille standard pour les images
 
 $reponse->closeCursor();
