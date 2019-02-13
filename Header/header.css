@@ -15,7 +15,7 @@
 	
 	position: relative;
 	display: inline-block;
-	width:320px;
+	width:16.4%;
 	height:40px;
 	margin:0px;
 	padding:0px;
@@ -30,6 +30,9 @@
 
 
 }
+
+
+
 
 #recherche {
 	position: absolute;
