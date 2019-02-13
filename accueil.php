@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title> Page d'accueil </title>
+		<link rel="stylesheet" type="text/css" href="acceuil.css" />
 	</head>
 	
 	<body>
