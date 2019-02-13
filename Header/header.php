@@ -18,19 +18,19 @@
 	
 	<div  id="recherche">
 		<ul>
-			<li><a href="accueil.php">Page d'accueil</a></li>
+			<li><a href="../accueil/accueil.php">Page d'accueil</a></li>
 			
-			<li><a href="contacts.php">Page de contacts</a></li>
+			<li><a href="../contacts/contacts.php">Page de contacts</a></li>
 			
-			<li><a href="Mentions-legales.php">Mentions légales</a></li>
-			<li><a href="Calendrier.php">calendrier</a></li>
-			<li><a href="Panier.php">Panier</a></li>
+			<li><a href="../Mentions-legales/Mentions-legales.php">Mentions légales</a></li>
+			<li><a href="../Calendrier/Calendrier.php">calendrier</a></li>
+			<li><a href="../Panier/Panier.php">Panier</a></li>
 				
-			<li><a href="Catalogue.php">Catalogue</a>
+			<li><a href="../Catalogue/Catalogue.php">Catalogue</a>
 				<ul class="sousmenu">
-					<li><a href= "Article.php"> Articles </a></li>
-					<li><a href="Pack.php"> Pack </a></li>
-					<li><a href="Prestation"> Prestations </a></li>
+					<li><a href= "../Article/Article.php"> Articles </a></li>
+					<li><a href="../Pack/Pack.php"> Pack </a></li>
+					<li><a href="../Prestation/Prestation"> Prestations </a></li>
 				</ul>
 			</li>
 		</ul>
