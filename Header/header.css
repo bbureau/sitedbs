@@ -66,18 +66,7 @@
 
 
 
-body {
-	margin:0;
-	padding:0;
-	background: url(fete1.JPG) no-repeat center center fixed;
-	/* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 
-	
-}
 
 .sousmenu{
 	display: none;
