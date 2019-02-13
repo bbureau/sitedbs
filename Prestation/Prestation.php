@@ -5,11 +5,11 @@
 		<title> Prestation </title>
 	</head>
 	<body>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 
 	<div style="background-color:lightblue">
 		<ul>
-			<li><a href="toutes-les-prestations.php"> Toutes les prestations </a></li>
+			<li><a href="../toutes-les-prestations/toutes-les-prestations.php"> Toutes les prestations </a></li>
 		</ul>
 	</div>
 		

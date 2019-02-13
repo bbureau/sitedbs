@@ -6,12 +6,12 @@
 		<title> Article </title>
 	</head>
 	<body>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 
 	
 	<div style="background-color:lightblue">
 		<ul>
-			<li><a href="tous-les-articles.php"> Tous les articles </a></li>
+			<li><a href="../tous-les-articles/tous-les-articles.php"> Tous les articles </a></li>
 		</ul>
 	</div>
 	
@@ -35,9 +35,9 @@ while ($donnees = $reponse->fetch())
 	$dossier = strtr($donnees['ID'],$trans);
 	
 // on affiche le nom du produit, le nom est un lien vesr la page décrivant le produit
-	echo '<a href="PageArticle.php?ID=' . $donnees['ID'] . '">' . $donnees['Nom'] . '</a> <br />';
+	echo '<a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '">' . $donnees['Nom'] . '</a> <br />';
 	// on affiche l'image correspondante 
-	echo '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' ;
+	echo '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' ;
 } //height et width définisse une taille standard pour les images
 
 $reponse->closeCursor();

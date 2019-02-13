@@ -6,7 +6,7 @@
 		<title> PageArticle </title>
 	</head>
 	<body>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 
 
  	
@@ -34,7 +34,7 @@ $donnees = $req->fetch();
 // 2)on affiche le nom du produit 
 	echo $donnees['Nom'] .  '<br />' 
 	//3) Sn image
-	. '<img src ="ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' 
+	. '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' 
  //height et width définisse une taille standard pour les images
 
 //4 les autre éléments

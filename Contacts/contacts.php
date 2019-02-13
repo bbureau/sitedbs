@@ -8,13 +8,13 @@
 
 	<body>
 		<header>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 		</header>
 
 		<section>
 		<ul>
-			<li><a href="equipe.php"> Présentation de l'équipe </a></li>
-			<li><a href="Messagerie.php"> Messagerie </a></li>
+			<li><a href="../equipe/equipe.php"> Présentation de l'équipe </a></li>
+			<li><a href="../Messagerie/Messagerie.php"> Messagerie </a></li>
 		</ul>
 	</div>
 		</section>
