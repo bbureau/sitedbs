@@ -12,7 +12,6 @@
 		</header>
 
 		<section>
-	<div style="background-color:lightblue">
 		<ul>
 			<li><a href="equipe.php"> Présentation de l'équipe </a></li>
 			<li><a href="Messagerie.php"> Messagerie </a></li>
