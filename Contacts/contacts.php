@@ -22,7 +22,7 @@
 		<section id="prez">
 			<figure>
 			Prez
-   			<img src="image.jpg" alt="Photo prez" title="photo prez!" />
+   			<img src="Prez_DBS.jpg" alt="Photo prez" title="photo prez!" />
    			<figcaption> Julien Guinot </figcaption>
    			Téléphone: xx xx xx xx xx
    			email: julien.guinot@ecl18.ec-lyon.fr
@@ -32,7 +32,7 @@
 
    		<section id="sg_matos">
    			SG Matos
-   			<img src="image.jpg" alt="Photo prez" title="photo prez!" />
+   			<img src="SG_DBS.jpg" alt="Photo prez" title="photo prez!" />
    			<figcaption> Paul Flagel </figcaption>
    			Téléphone: xx xx xx xx xx
    			email: paul.flagel@ecl18.ec-lyon.fr
