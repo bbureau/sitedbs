@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		 <link rel="stylesheet" href="contact.css" />
+		 <link rel="stylesheet" href="contacts.css" />
 		<title> Page de contacts </title>
 	</head>
 
