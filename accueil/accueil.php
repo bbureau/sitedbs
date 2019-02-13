@@ -7,17 +7,17 @@
 	</head>
 	
 	<body>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 
 	<div>
 		<ul>
-			<li><a href="sponsors et partenariats.php"> Sponsors et partenariats </a></li>
-			<li><a href="galerie.php"> Galerie </a></li>
+			<li><a href="../partenariat/partenariat.php"> Sponsors et partenariats </a></li>
+			<li><a href="../galerie/galerie.php"> Galerie </a></li>
 		</ul>
 	</div>
 	<div>
 		<ul>
-			<li><a href="Gestion-du-materiel.php"> gestion du matériel </a></li>
+			<li><a href="../Gestion-du-materiel/Gestion-du-materiel.php"> gestion du matériel </a></li>
 		</ul>
 	</div>	
 	

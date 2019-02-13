@@ -2,7 +2,7 @@
 <html>
 <HEAD>
 
-<link rel="stylesheet" type="text/css" href="header.css" />
+<link rel="stylesheet" type="text/css" href="../Header/header.css" />
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/handelgothic-tl-kirillica" type="text/css"/>
 
 </HEAD>
