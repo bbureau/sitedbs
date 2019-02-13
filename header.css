@@ -1,0 +1,96 @@
+
+
+
+
+#recherche ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	background-color:#000000;
+}
+
+
+#recherche li {
+	
+	
+	position: relative;
+	display: inline-block;
+	width:320px;
+	height:40px;
+	margin:0px;
+	padding:0px;
+	border-right:1px solid#000000;
+	text-align: center;
+	line-height:40px;
+	font-family:'HandelGothicTLRegular';
+	
+	
+	font-weight: bold;
+	
+
+
+}
+
+#recherche {
+	position: absolute;
+	top:92px;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	
+	
+}
+
+#recherche li a{
+	display:block;
+	text-decoration:none;
+	font-size: x-large;
+	color:#FFFFFF;
+	
+}
+
+#recherche li:hover{
+	background-color:#B22222;
+}
+
+#recherche .sousmenu li:hover{
+	background-color:#6E0B14;
+	
+}
+
+#recherche .sousmenu li{
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF
+}
+
+
+
+
+body {
+	margin:0;
+	padding:0;
+	background: url(fete1.JPG) no-repeat center center fixed;
+	/* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	
+}
+
+.sousmenu{
+	display: none;
+}
+
+#recherche li:hover .sousmenu{
+	display: block;
+	position:absolute;
+	
+	left:0px;
+	padding:0px;
+	
+	
+}
+
+
