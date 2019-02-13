@@ -1,57 +1,13 @@
-
-
-
-
-#recherche ul{
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	background-color:#000000;
-}
-
-
-#recherche li {
-	
-	
-	position: relative;
-	display: inline-block;
-	width:16.35%;
-	height:40px;
-	margin:0px;
-	padding:0px;
-	border-right:1px solid#000000;
-	text-align: center;
-	line-height:40px;
-	font-family:'HandelGothicTLRegular';
-	
-	
-	font-weight: bold;
-	
-
-
-}
-
-
-
-
 #recherche {
 	position: absolute;
 	top:92px;
 	width:100%;
+	left:0;
 	margin:0px;
 	padding:0px;
 	
 	
 }
-
-#recherche li a{
-	display:block;
-	text-decoration:none;
-	font-size: x-large;
-	color:#FFFFFF;
-	
-}
-
 #recherche li:hover{
 	background-color:#B22222;
 }
@@ -75,14 +31,61 @@
 	display: none;
 }
 
-#recherche li:hover .sousmenu{
+ #recherche li:hover .sousmenu{
 	display: block;
 	position:absolute;
-	
+	width:100%;
 	left:0px;
 	padding:0px;
+	text-align:center;
 	
 	
 }
+
+
+#recherche ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	background-color:#000000;
+}
+
+
+#recherche > ul >li{
+	
+	
+	position: relative;
+	display: inline-block;
+	width: 16.3%;
+	height:40px;
+	margin:0px;
+	padding:0px;
+	border-right:1px solid#000000;
+	text-align: center;
+	line-height:40px;
+	font-family:'HandelGothicTLRegular';
+	
+	
+	font-weight: bold;
+	
+
+
+}
+
+
+
+
+
+
+#recherche  a{
+	
+	
+	font-size: x-large;
+	color:#FFFFFF;
+	
+}
+
+
+
 
 

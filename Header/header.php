@@ -27,11 +27,13 @@
 			<li><a href="../Panier/Panier.php">Panier</a></li>
 				
 			<li><a href="../Catalogue/Catalogue.php">Catalogue</a>
-				<ul class="sousmenu">
-					<li><a href= "../Article/Article.php"> Articles </a></li>
+				<div class="sousmenu">
+				<ul>
+					<li ><a href= "../Article/Article.php"> Articles </a></li>
 					<li><a href="../Pack/Pack.php"> Pack </a></li>
 					<li><a href="../Prestation/Prestation"> Prestations </a></li>
 				</ul>
+				</div>
 			</li>
 		</ul>
 	</div>
