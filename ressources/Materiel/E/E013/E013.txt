@@ -1,0 +1,15 @@
+2 to 4 or 1 to 8
+XLR in-out
+Balanced
+Input levels adjustable from -12db / + 12dB
+Built-in power supply (230V 50 Hz, 2.5VA)
+Max. input level +18 dBm
+Input impedance 20 kOhm
+Max. output level +18 dBm
+Output impedance 200 ohm
+Min. load impedance 200 ohm
+Frequency range 20 Hz - 20 kHz
+Total harmonic distortion (THD) 0.05%
+Disturbance-free voltage range 102 dB
+Dimensions: 482 x 44 x 65 mm
+Weight: 1 kg

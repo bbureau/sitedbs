@@ -1,0 +1,6 @@
+For snare, tom, double bass etc.
+Directional characteristic: Supercardioid
+134 dB max. SPL
+Frequency range: 20 - 12,500 Hz
+Impedance: 500 Ohm
+Fixed, integrated microphone holder

@@ -1,0 +1,7 @@
+Dimensions:	16.88¡± x 13.13¡± x 2.62¡± (WxDxH) / 429mm x 334mm x 67mm (WxDxH)
+Weight:	5.8 lbs / 2.64 kg
+Power supply:	12V 2.0A pin-positive, included
+Communication:	USB-MIDI with proprietary hardware/software handshake
+Inputs:	USB, Two assignable footswitch inputs
+Mac system requirements:	G4 or faster/Intel Mac recommended, 512 MB RAM/1 GB recommended, OS 10.3.9, 10.4 or later. recommended, QuickTime 6.5 or higher, DVD-ROM drive, USB port
+PC system requirements:	1.5 GHz or faster, 512 MB RAM/1 GB recommended, Windows XP or Vista, Windows-compatible sound card/ASIO driver support recommended, QuickTime 6.5 or higher, DVD-ROM drive, USB port

@@ -1,0 +1,15 @@
+R¨¦ponse en fr¨¦quences (-3dB): 65Hz - 18kHz (en mode MUSIC)
+
+R¨¦ponse en fr¨¦quences (-10dB): 50Hz - 20kHz (en mode MUSIC)
+
+Maximum SPL : 126dB
+
+Ouverture: 90¡ã x 60¡ã
+
+Puissance: 1000W
+
+Dimension (H x L x l ): 610mm x 356mm x 356mm
+
+Poids net: 15,6kg
+
+Consommation: 100 - 240V~, 50 - 60 Hz, 0,8 - 0,5A 

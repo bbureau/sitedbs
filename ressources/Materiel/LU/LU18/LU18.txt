@@ -1,0 +1,19 @@
+Section gradation : r¨¦glage de niveau et flash par circuit.
+
+Section modulateur. Section s¨¦quenceur de 4 canaux: 42 programmes
+
+3 modes de d¨¦filement des Programmes : horloge interne, mode musical, mode BPM.
+
+S¨¦lection des programmes.
+
+Mode fondu encha?n¨¦ r¨¦glable.
+
+Fonction plein feu et black-out. D¨¦tection musicale.
+
+Entr¨¦e audio sur connecteur RCA. 5 A par canal (2 300 W maximum en 230 V).
+
+Charge maximum totale : 16 A (4 600 W maximum en 230 V).
+
+Sorties de puissance sur prises 10/16 A.
+
+Dim (mm) 483 x 165 x 132 - Poids 4.1 Kg

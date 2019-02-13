@@ -1,0 +1,13 @@
+- 300/ 600 Watt
+- 8 Ohm
+- R¨¦ponse en fr¨¦quence: 55 - 18.000 Hz
+- Dispersion: 60¡ã x 40¡ã
+- Sensibilit¨¦: 99 dB, SPL max: 127 dB
+- Entr¨¦e combo XLR/ jack niveau micro ouligne
+- Entr¨¦e ligne et sortie parall¨¨le en XLR
+- Entr¨¦e instrument
+- Chaque entr¨¦e dispose d'un contr?le de volume
+- Coupe bas 150 Hz
+- Sortie Speakon 8 Ohm
+- Dimensions: 390 x 540 x 350 mm
+- Poids: 21 kg

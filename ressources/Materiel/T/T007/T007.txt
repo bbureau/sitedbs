@@ -1,0 +1,30 @@
+fonctionne avec le logiciel de gestion Engine (aussi pour iPad)
+utilisable en combinaison avec le lecteur SC3900
+plateau ¨¤ haute r¨¦solution sensible au toucher
+rep¨¨res LED autour du plateau (couleur rouge/bleu)
+points de rep¨¨res visualis¨¦s par une autre couleur LED
+¨¦cran graphique avec info de piste et forme d'onde
+4 boutons en caoutchouc pour le Hot Start (8 en mode MIDI via via la fonction MIDI Layer)
+4 boutons d'effet
+fonction loop ¨¦tendue
+compteur BPM 4 modes (auto, manual tap, manual BPM, BPM meta data)
+jogwheel avec mode scratch/bend
+option BPM sync
+MIDI totalement assignable
+support HID dans Traktor avec communication bidirectionnelle
+DAC 24 bits Burr Brown interne pour une qualit¨¦ audio optimale
+livr¨¦ avec Traktor LE 2, compatible Traktor 2 native
+¨¦cran avec affichage piste, titre et temps ¨¦coul
+¨¦cran forme d'onde de chaque piste
+boutons 'short throttle' play et Cue permettant un contr?le MIDI rapide
+mode Spin avec fonction scratch en m¨¦morisation du dernier point de rep¨¨re
+sortie RCA st¨¦r¨¦o
+sortie num¨¦rique S/PDIF
+verrou Kensington disponible
+connexion r¨¦seau via un cable Ethernet
+connecteur faders-start sur jack 3.5 mm
+connecteur USB B pour la connexion avec le PC
+bouton marche/arr¨ºt encastr
+y compris: court cable RCA
+dimensions: 36 x 32.6 x 12.4 cm
+poids: 4.35 kg

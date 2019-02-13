@@ -1,0 +1,106 @@
+
+Produits
+Lecteurs DJ
+Tables de mixage DJ
+Contr?leur DJ
+Platines vinyle
+
+Largeur
+320 mm
+Hauteur
+107,9 mm
+Profondeur
+378,4 mm
+Poids
+6,6 kg
+S/N Ratio Line
+104 dB
+S/N Ratio Phono
+94 dB
+S/N Ratio Mic
+82 dB
+Crosstalk Line
+82 dB
+Distorsion
+< 0,005 %
+Master
+Master Balance
+Oui
+Stereo/Mono Switch
+Oui
+Frequency Filter
+Oui
+Level Meter Size
+15 segment
+Master Out Attenuator
+Oui
+Channels
+Gamme EQ/ISO
+¨C26 dB ~ +6 dB
+Type de Compteur
+Individuel
+Level Meter Size
+15 segment
+Performance Control
+Channels
+4
+FX Frequency
+Oui
+Effect Sampler
+Auto BPM Counter
+Oui
+Effect Level & Depth Volume
+Oui
+MIDI Global Clock
+Oui
+Roll Down
+Oui
+Roll Up
+Oui
+Roll Sampler (Fwd)
+Oui
+Roll Sampler (Reverse)
+Oui
+Crossfader
+Crossfader Type
+Rail Carbone
+CURVE Assignable
+Oui
+Field Replaceable
+Oui
+Fader Curve
+2
+Mic
+Branchement MIC
+Jack
+XLR
+Mic EQ
+2 band
+Gamme ¨¦galiseur Mic
+-12 dB ~ +12 dB
+Talkover
+S¨¦lecteur 3 Positions
+MIDI Info
+Contr?les Assignables
+49
+DIN Out MIDI
+1 (DIN 5 broches)
+MIDI On/Off
+Oui
+MIDI Start/Stop
+Oui
+Terminals
+Entr¨¦es
+1 MIC (Jack 6,35 mm)
+1 MIC (XLR)
+1 RETURN (Jack 6,35 mm)
+3 PHONO (RCA)
+5 CD/LINE (RCA)
+Sorties
+1 BOOTH (RCA)
+1 MASTER (RCA)
+1 MASTER (XLR)
+1 REC (RCA)
+1 S/PDIF Digital (RCA)
+1 SEND (Jack 6,35 mm)
+

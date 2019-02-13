@@ -1,0 +1,1 @@
+- Charge maximum totale : 10 A (2 300 W maxi. en 230 V). - 8 interrupteurs bascule marche/arrt - Visualisation de l¡¯tat des sorties sur interrupteurs - Protection par disjoncteur thermique en faade - Sorties sur prises franaises 

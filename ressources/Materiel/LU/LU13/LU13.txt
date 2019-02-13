@@ -1,0 +1,22 @@
+Light source: Philips Platinum 5R (included)
+Beam angle: 0.6бу - 4бу
+Control: DMX-512 (17 channels)
+Digital LCD display for setting all functions and for manual control
+Pan movement: 540бу
+Tilt movement: 270бу
+Ultra high-speed stepper motors for fast and smooth 16-bit movements
+Adjustable pan / tilt speed
+Strobe / Shutter: Shutter features preprogrammed strobe effects, 0-13 Hz
+Dimmer: linear 0-100%
+Colour wheel: 14 colours + white, half-colours
+Gobo wheel: 17 static gobos + open
+Effects: rotatable 8 facet prism with preprogrammed macros
+Focus / Zoom: motorised zoom / focus lens with very fine adjustments
+DMX input and output: 3 + 5-pin XLR
+Power supply: Power Twist
+Voltage supply: 100-240 V, 50/60 Hz
+Max. power consumption: 230 W
+Protection class: IP20
+Includes mounting bracket with Quick-Lok locking system
+Dimensions (head up, L x W x H): 39 x 33 x 48.5 cm
+Weight: 19.5 kg

@@ -1,0 +1,29 @@
+Frequency Response    10Hz - 20 kHz, -1 dB
+
+Noise Level (22-22kHz, Input Shorted)    -100 dBu
+
+THD + N (10 Hz -22 kHz)    0.013% typ. @ 1 VRMS,1 kHz.
+
+Input Impedance    (GTR)    1 Meg. Ohm
+                             (SPK)    10 k Ohm
+
+Max. Input Level GTR (1% THD)    +7 dBu ( 9v. Batt.)
+                                                   +0 dBu (48v. Phantom)
+
+Max. Input Level SPK (1% THD)    v+30 dBu ( 9v. Batt.)
+                                                    +22 dBu (48v. Phantom)
+
+GTR/SPK Inputs    1/4? Phone Jack, unbalanced
+
+OUTPUT/LINK    1/4? Phone Jack, unbalanced
+
+BALANCED OUTPUTS    XLR Connector, balanced
+
+Phantom Power    24-48 VDC
+
+Battery    9 Volt
+
+Dimensions    5.6? W x 4? D x 2? H
+                    142mm W x 101.6mm D x 50.8mm H
+
+Weight    15 oz. / 430 g

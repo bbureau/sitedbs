@@ -1,0 +1,7 @@
+Size: 18"
+Woofer
+Rated power: 650 W RMS
+Impedance: 8 Ohm
+Frequency range: 41 - 2.400 Hz
+Resonant frequency (Fs): 28 Hz
+For high-demand bass performance

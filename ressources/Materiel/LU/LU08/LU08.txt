@@ -1,0 +1,23 @@
+? Power : AC100V/AC120V/AC230V/AC240V,50Hz-60Hz
+
+? Heater : 1,200 W ? Output : 18,000 cu.ft / min
+
+? First Heat-up Time : 9 min
+
+? Tank Capacity : 2.5 liter
+
+? Fluid Consumption Rate : 15 min / liter (100% Output)
+
+? Remote Included : Z-8 Timer Remote
+
+? Optional Remotes : Z-9 Wireless Remote
+
+? Accessory Include : Hanging Bracket
+
+? Weight : 10.9 Kg
+
+? Dimensions (mm) : L 458 W 243 H 177
+
+? DMX : On board
+
+? Liquid Used : Antari FLR / FLG Liquid

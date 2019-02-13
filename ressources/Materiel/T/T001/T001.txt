@@ -1,0 +1,27 @@
+With 2 operating modes (FOH or monitor)
+32 mono inputs
+Including 2 mono / dual stereo inputs
+With 48V phantom (individually switchable)
+Mic / Line switchable
+Phase reverse
+100 Hz high pass filter
+Each monocanal insert
+Direct-out
+4-band EQ with param. Mids
+4-band EQ at stereo
+Mute, PFL, PAN
+4 segment LEDs per channel
+4 subgroups
+3 Master-Outs (L / R and mono)
+2 Stereo-Return
+2-track in / out
+6 Aux (1-4, 5-6 pre / post)
+Aux 1-4 with inserts
+Fader Reverse
+Talkback input (XLR)
+7x4 matrix
+Generator (OSC, pink-noise) switchable
+4-pin Lamp-Out
+Sys-link capable (option) internal power supply
+Connection for ext. Accident prevention (optional: RPS 11 / 3c)
+Weight: 30 kg

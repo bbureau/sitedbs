@@ -1,0 +1,8 @@
+- Source lumineuse : 36X3W UV LED
+- Canaux DMX : 1/3
+- Modes : DMX 512, auto, Ma?tre-esclave, musical
+- Angle : 60 degr¨¦s
+- Consommation : 120W
+- Alimentation : AC100-240V, 50/60Hz
+- Dimensions : 452 x 154 x 126 mm
+- Poids net £º 4Kg

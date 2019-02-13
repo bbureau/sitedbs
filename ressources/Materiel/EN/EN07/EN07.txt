@@ -1,0 +1,21 @@
+
+SPECIFICATIONS
+Freq. Response (-3 dB)	75 Hz - 18 kHz1
+Freq. Range (-10 dB)	50 Hz - 20 kHz1
+Axial Sensitivity	95 dB
+Max. Measured SPL3	134 dB
+Recommended HP Freq.	40 Hz
+Coverage (Horiz. x Vert.)	90бу x 50бу
+Power Handling	400W Continuous, 1600W Peak
+LF Transducer(s)	(1) EVS-15K, 381mm (15") Woofer
+HF Transducer	DH-1K, 39mm (1.5") Titanium Diaphragm Compression Driver
+Crossover Frequency	1.7 kHz
+Nominal Impedance	8 Ohms
+Minimum Impedance	7.4 Ohms
+Connectors	Dual NL4
+Enclosure Material	9-ply, 15mm Plywood, Internally Braced, with Texured Paint
+Grille	18GA Steel with Black Powdercoat
+Dimensions (H x W x D)	708mm x 432mm x 382mm (27.89" x 17.02 x 15.05"),
+Net Weight	21.9 kg (48.2 lbs)
+Shipping Weight	26.6 kg (58.6 lbs)
+Accessories	TSS-1, Aluminum Tripod Stand, TSP-1, Tripod Kit, Includes (2) Tripod Stands and Carrying Case, ASP-1, Steel Subwoofer Stand
