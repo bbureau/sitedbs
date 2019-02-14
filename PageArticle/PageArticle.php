@@ -48,9 +48,17 @@ $donnees = $req->fetch();
 <!-- récupérons le fichier txt associé -->
 <?php
 $fp = fopen ('../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.txt', "r");
-$contenu_du_fichier = fgets ($fp, 255);
+while (!feof($fp))
+	{
+		/*On lit la ligne courante*/
+		$ligne = fgets($fp);
+		/*On l'affiche*/
+		echo $ligne;
+	}
+	/*On ferme le fichier*/
+
 fclose ($fp);
-echo $contenu_du_fichier;
+
 ?>
 
 	</body>
