@@ -22,7 +22,7 @@ catch(Exception $e)
 }
 //on récupère les infos qui nous intéresse
 
-$req = $bdd->prepare('SELECT Nom, Marque, Caution, Etat, Categorie, ID FROM BaseDeDonnee WHERE ID = ? ');
+$req = $bdd->prepare('SELECT Nom, Marque, Caution, Etat, Categorie, Disponible, ID FROM BaseDeDonnee WHERE ID = ? ');
 $req->execute(array($_GET['ID']));
 $donnees = $req->fetch();
 //on crée la page
@@ -70,7 +70,22 @@ fclose ($fp);
 <input type="submit" value="RESERVER" />
 </form>
 
-<!-- Dans le cas où les variables existent (=on a cliquer sur résever), on envoie le mail et on en informe l'utilisateur -->
+<!-- Dans le cas où les variables existent (=on a cliqué sur résever), on envoie le mail et on en informe l'utilisateur -->
+<?php $bdd ->exec('UPDATE BaseDeDonnee SET Disponible = "oui" WHERE ID = "M003"');
+
+if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fin'], $_POST['Mail'])) 
+{ // Il s'agit alors de vérifier si le matériel est disponible
+if ($donnees['Disponible'] == 'oui')
+	{ //on envoie alors le mail de réservation
+		
+
+
+	}
+
+
+} 
+
+ ?>
 
 	</body>
 
