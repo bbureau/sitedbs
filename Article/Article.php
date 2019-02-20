@@ -43,6 +43,9 @@ while ($donnees = $reponse->fetch())
 $reponse->closeCursor();
 
 ?>
+
+
+
 	</body>
 
 </html>

@@ -58,8 +58,19 @@ while (!feof($fp))
 	/*On ferme le fichier*/
 
 fclose ($fp);
-
 ?>
+<!--  Maintenant passons au formulaire de réservation -->
+
+<?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .'">' ?>
+<label for= "Nom"> Nom </label> : <input type = "text" name="Nom" id = "Nom" required/>
+<label for= "Prenom"> Prénom </label> : <input type = "text" name="Prenom" id = "Prenom" required />
+<label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/>
+<label for= "Date_Fin"> Date de fin de réservation </label> : <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/>
+<label for= "Mail"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
+<input type="submit" value="RESERVER" />
+</form>
+
+<!-- Dans le cas où les variables existent (=on a cliquer sur résever), on envoie le mail et on en informe l'utilisateur -->
 
 	</body>
 
