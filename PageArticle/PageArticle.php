@@ -97,7 +97,7 @@ if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fi
 		
 	}
 	$req2->closeCursor();
-	if ($compteur < $donnees['Quantite'])
+	if (($compteur < $donnees['Quantite']) AND (new Datetime($DateD) <= new Datetime($DateF)))
 		{ //on envoie alors le mail de réservation
  
     	$to = "pe26decibel@gmail.com";
@@ -130,16 +130,11 @@ if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fi
 
 
 		}
-	else
-	{
+	else {
 		echo "Veuillez choisir des dates valides";
 	}	
 
 
-}
-else
-{
-	echo "Veuillez remplir tout les champs";
 } 
 
  ?>
