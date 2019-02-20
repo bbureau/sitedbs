@@ -22,7 +22,7 @@ catch(Exception $e)
 }
 //on récupère les infos qui nous intéresse
 
-$req = $bdd->prepare('SELECT Nom, Marque, Caution, Etat, Categorie, Disponible, ID FROM BaseDeDonnee WHERE ID = ? ');
+$req = $bdd->prepare('SELECT Nom, Marque, Caution, Etat, Quantite, Categorie, Disponible, Prix, ID FROM BaseDeDonnee WHERE ID = ? ');
 $req->execute(array($_GET['ID']));
 $donnees = $req->fetch();
 //on crée la page
@@ -71,18 +71,75 @@ fclose ($fp);
 </form>
 
 <!-- Dans le cas où les variables existent (=on a cliqué sur résever), on envoie le mail et on en informe l'utilisateur -->
-<?php $bdd ->exec('UPDATE BaseDeDonnee SET Disponible = "oui" WHERE ID = "M003"');
+<?php 
 
 if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fin'], $_POST['Mail'])) 
 { // Il s'agit alors de vérifier si le matériel est disponible
-if ($donnees['Disponible'] == 'oui')
-	{ //on envoie alors le mail de réservation
+//Pour cela on regarde combien d'exemplaire du matériel est loué durant cette période
+	$req2 = $bdd->prepare('SELECT ID, Debut, Fin FROM Locations WHERE ID = ? ');
+	$req2->execute(array($_GET['ID']));
+	$compteur = 0;
+	//il faut mettre les dates aux bons format
+	$trans = array("/" => "-");
+	$DateD = strtr($_POST['Date_Debut'], $trans);
+	$DateF = strtr($_POST['Date_Fin'], $trans);
+	
+	
+	while ($donnees2 = $req2->fetch())
+	{  
+		if(  ((new Datetime($DateD) >= new Datetime($donnees2['Debut'])) AND (new Datetime($DateD) <= new Datetime($donnees2['Fin'])))
+			OR ((new Datetime($DateF) >= new Datetime($donnees2['Debut'])) AND (new Datetime($DateF) <= new Datetime($donnees2['Fin'])))
+			OR (new Datetime($DateD) <= new Datetime($donnees2['Debut'])) AND (new Datetime($DateF) >= new Datetime($donnees2['Fin'])))
+		{
+			$compteur = $compteur + 1;
+
+		}
 		
-
-
 	}
+	$req2->closeCursor();
+	if ($compteur < $donnees['Quantite'])
+		{ //on envoie alors le mail de réservation
+ 
+    	$to = "pe26decibel@gmail.com";
+ 
+    	$subject = "Réservation" . $donnees['Nom'];
+ 
+    	$message = $_POST['Prenom'] ." " . $_POST['Nom'] . " souhaite résever " . $donnees['Nom'] . " du " . $_POST['Date_Debut'] . " au " . ['Date_Fin'];
+ 
+    	$header = "From: \"" . $_POST['Prenom'] ." " . $_POST['Nom'] ."\"<". $_POST['Mail']. ">"."\n";
+		$header .= "Reply-to: \"" . $_POST['Prenom'] ." " . $_POST['Nom'] ."\"<". $_POST['Mail']. ">";
+ 
+    	if(mail($to,$subject,$message, $headers)) 
+    	{echo "L'email a été envoyé.";}
+ 
+    	else {
+    		echo "L'email n'a pas été envoyé.";
+	//ATTENTION: la suite de ce code sera à déplacer dans le cas où le mail a bien été envoyé lorsque l'on passera sur le serveur en ligne
+	//La demande étant possible on actualise la base de données comptenant les locations
+    		$req3 = $bdd ->prepare("INSERT INTO Locations(ID, Locataire, Debut, Fin, Caution, Prix) VALUES(:ID, :Locataire, :Debut, :Fin, :Caution, :Prix)");
+    		$req3 ->execute(array(
+    			'ID' => $donnees['ID'],
+    			'Locataire' => $_POST['Nom'] . " " . $_POST['Prenom'],
+    		'Debut' => $DateD,
+    		'Fin' => $DateF,
+    		'Caution' => $donnees['Caution'],
+    		'Prix' => $donnees['Prix']
+										));
+
+			}
 
 
+		}
+	else
+	{
+		echo "Veuillez choisir des dates valides";
+	}	
+
+
+}
+else
+{
+	echo "Veuillez remplir tout les champs";
 } 
 
  ?>
