@@ -110,10 +110,14 @@ if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fi
 		$header .= "Reply-to: \"" . $_POST['Prenom'] ." " . $_POST['Nom'] ."\"<". $_POST['Mail']. ">";
  
     	if(mail($to,$subject,$message, $headers)) 
-    	{echo "L'email a été envoyé.";}
+    	{echo " <script> 
+    	alert('L\'email a été envoyé !'');
+    	</script>";}
  
     	else {
-    		echo "L'email n'a pas été envoyé.";
+    		echo "<script>
+    		alert('L\'email n\'a pas été envoyé !');
+    		</script>";
 	//ATTENTION: la suite de ce code sera à déplacer dans le cas où le mail a bien été envoyé lorsque l'on passera sur le serveur en ligne
 	//La demande étant possible on actualise la base de données comptenant les locations
     		$req3 = $bdd ->prepare("INSERT INTO Locations(ID, Locataire, Debut, Fin, Caution, Prix) VALUES(:ID, :Locataire, :Debut, :Fin, :Caution, :Prix)");
@@ -131,7 +135,9 @@ if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fi
 
 		}
 	else {
-		echo "Veuillez choisir des dates valides";
+		echo "<script>
+		alert('Veuillez choisir des dates valides');
+		</script>";
 	}	
 
 
