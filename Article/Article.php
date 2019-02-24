@@ -30,20 +30,23 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
 ?>
 
 <!-- Mettons en place le formulaire  de tri -->
+
 <script type="text/javascript">
       function fonctionCategorie(Cat) {
+      	// On considere tout les éléments ayant pour ID Cat (il y a la case du formulaire et les éléments à afficher)
         query = document.querySelectorAll("#" + Cat);
+        //si la case est cochée
 		if (query[0].checked) 
 		{
 			for (var i = 1; i < query.length; i++)
 			{
-				query[i].style.display="block";
+				query[i].style.display="block"; // on affiche tout
 			}}
-		else
+		else //sinon
 		{
 			for (var i = 1; i < query.length; i++)
 			{
-				query[i].style.display="none";
+				query[i].style.display="none"; // on cache tout
 			}
       }
   }
@@ -52,6 +55,7 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
 	<p>
        Catégorie: <br />
        <input type="checkbox" name="Micro" id="Micro" checked onchange="fonctionCategorie('Micro');" /> <label for="Micro">Micro</label><br />
+       <!-- On appel dans le cas d'un changement de case la fonction définie auparavant -->
        <input type="checkbox" name="Ampli" id="Ampli" checked onchange="fonctionCategorie('Ampli');"/> <label for="Ampli">Amplifiacteur</label><br />
        <input type="checkbox" name="TableDeMixage" id="TableDeMixage" checked onchange="fonctionCategorie('TableDeMixage');"/> <label for="TableDeMixage">Table de mixage</label><br />
        <input type="checkbox" name="Effects" id="Effects" checked onchange="fonctionCategorie('Effects');"/> <label for="Effects">Effects</label><br />
