@@ -71,6 +71,7 @@ fclose ($fp);
 </form>
 
 <!-- Dans le cas où les variables existent (=on a cliqué sur résever), on envoie le mail et on en informe l'utilisateur -->
+
 <?php 
 
 if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fin'], $_POST['Mail'])) 
