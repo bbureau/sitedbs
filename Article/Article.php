@@ -40,7 +40,7 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
 		{
 			for (var i = 1; i < query.length; i++)
 			{
-				query[i].style.display="block"; // on affiche tout
+				query[i].style.display="inline-block"; // on affiche tout
 			}}
 		else //sinon
 		{
@@ -61,11 +61,11 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
        <input type="checkbox" name="Effects" id="Effects" checked onchange="fonctionCategorie('Effects');"/> <label for="Effects">Effects</label><br />
        <input type="checkbox" name="Enceintes" id="Enceintes" checked onchange="fonctionCategorie('Enceintes');"/> <label for="Enceintes">Enceintes</label><br />
        <input type="checkbox" name="Lumieres" id="Lumieres" checked onchange="fonctionCategorie('Lumieres');"/> <label for="Lumieres">Lumieres</label><br />
-       <input type="checkbox" name="Cable" id="Cable" checked onchange="fonctionCategorie('Cable');"/> <label for="Cable">Lumieres</label>
+       <input type="checkbox" name="Cable" id="Cable" checked onchange="fonctionCategorie('Cable');"/> <label for="Cable">Cables</label>
    </p>
 </form>
 <?php
-
+$donnees = $reponse->fetch();
 
 while ($donnees = $reponse->fetch())
 {  //on récupère le fichier correspondant
