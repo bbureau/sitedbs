@@ -29,7 +29,13 @@ article{
 }
 
 img{
-	width: 50%;
+	width: 20%;
+	margin: 5%;
+}
+
+figcaption{
+	position: relative;
+	display: center;
 }
 
 
