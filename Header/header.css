@@ -18,8 +18,8 @@
 }
 
 #recherche .sousmenu li{
-	border-top: 1px solid #FFFFFF;
-	border-bottom: 1px solid #FFFFFF
+	border-top: 0px solid #FFFFFF;
+	border-bottom: 0px solid #FFFFFF
 }
 
 
@@ -34,9 +34,10 @@
  #recherche li:hover .sousmenu{
 	display: block;
 	position:absolute;
+	top: 40px;
 	width:100%;
-	left:0px;
-	padding:0px;
+	
+	
 	text-align:center;
 	
 	
