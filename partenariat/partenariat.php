@@ -5,12 +5,12 @@
 		<title> Sponsors et Partenaires </title>
 	</head>
 	<body>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 
 
 	<div style="background-color:lightblue">
 		<ul>
-			<li><a href="Galerie.php"> Galerie </a></li>
+			<li><a href="../Galerie/Galerie.php"> Galerie </a></li>
 		</ul>
 	</div>
 	

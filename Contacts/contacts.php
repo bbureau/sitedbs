@@ -8,10 +8,20 @@
 
 	<body>
 		<header>
-	<?php include("header.php"); ?> <!-- inclus les liens visibles partout-->
+	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
 		</header>
 
+<<<<<<< HEAD
 
+=======
+		<section>
+		<ul>
+			<li><a href="../equipe/equipe.php"> Présentation de l'équipe </a></li>
+			<li><a href="../Messagerie/Messagerie.php"> Messagerie </a></li>
+		</ul>
+	</div>
+		</section>
+>>>>>>> 1a25c12fb2d7579e48b0d0f22aeabea3d88fa90b
 		
 		<article>
 
