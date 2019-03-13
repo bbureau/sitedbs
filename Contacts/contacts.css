@@ -1,0 +1,35 @@
+body{ 
+	margin:0px;
+	padding: 0px;
+ }
+
+
+
+
+article{
+	position: relative;
+	display: flex;
+	margin: 20% 5%;
+	border: 1px black solid;
+	padding: 10%;
+	width: 100%;
+
+}
+
+#prez{
+ border: 1px black solid;
+ width: 50%;
+
+
+}
+
+#sg_matos{
+	border: 1px black solid;
+	width: 50%;
+}
+
+img{
+	width: 50%;
+}
+
+
