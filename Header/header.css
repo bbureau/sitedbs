@@ -1,3 +1,39 @@
+.row {
+    margin-bottom: 15px;
+}
+
+.row [class^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+
+#catalogue a:hover{
+	background-color: #007bff;
+	color: #ffffff;
+}
+
+#image {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+ #image:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.15);
+}
+
+
+
+
+
+
+
 #recherche {
 	position: absolute;
 	top:92px;
@@ -84,6 +120,10 @@
 	font-size: x-large;
 	color:#FFFFFF;
 	
+}
+
+Header{
+	width:100%
 }
 
 
