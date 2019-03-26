@@ -1,9 +1,279 @@
-body{
-/* L'image est positionnée en fond et est centrée */
-background: url(../Header/fete1.jpg) no-repeat center center fixed;
-/* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+/* body{ */
+/*L'image est positionnée en fond et est centrée
+/* background: url(../Header/fete1.jpg) no-repeat center center fixed; */
+/*Ajout de la propriété avec les préfixes pour tous les moteurs de rendu
+/* -webkit-background-size: cover; */
+/* -moz-background-size: cover; */
+/* -o-background-size: cover; */
+/* background-size: cover; */
+/* } */
+#titre {
+	font-size:xx-large
 }
+
+.bouton{
+	width:650px;
+	height:325px;
+	
+}
+
+#bouton1{
+	background:url("dj.jpg");
+	background-size: 100%;
+	color:white;
+	border-width:3px;
+	font-size:xx-large;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
+}
+
+#bouton2{
+	background:url("concert.jpg");
+	background-size: 100%;
+	color:white;
+	border-width:3px;
+	font-size:xx-large;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#bouton3{
+	background:url("table.jpg");
+	background-size: 100%;
+	color:white;
+	border-width:3px;
+	font-size:xx-large;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#bouton4{
+	background:url("festival.jpg");
+	background-size: 100%;
+	color:white;
+	border-width:3px;
+	font-size:xx-large;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#bouton1:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.1);
+	box-shadow: 7px 7px 12px #555;
+}
+#bouton2:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.1);
+	box-shadow: 7px 7px 12px #555;
+}
+#bouton3:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.1);
+	box-shadow: 7px 7px 12px #555;
+}
+#bouton4:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.1);
+	box-shadow: 7px 7px 12px #555;
+}
+
+
+.hovereffect {
+  width: 100%;
+  height: 50%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  width:100%;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.hovereffect:hover h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+  transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect hr {
+  width: 40%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border: 1px solid #FFF;
+}
+
+.hovereffect  hr:nth-child(3) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,90deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,90deg) scale3d(0,0,1);
+}
+
+.hovereffect  hr:nth-child(4) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,180deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1, 180deg) scale3d(0,0,1);
+}
+
+.hovereffect h2, .hovereffect hr {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+}
+
+.set1, .set2 {
+  left: 50%;
+  position: absolute;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+.set1 {
+  top: 27%;
+}
+
+.set2 {
+  top: 57%;
+}
+
+.hovereffect p {
+  width: 100%;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 2;
+  
+}
+
+.hovereffect p a {
+  color: #fff;
+  margin:100px;
+}
+
+.hovereffect p a:hover,
+.hovereffect p a:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  
+}
+
+.hovereffect  a button {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  padding: 10px;
+  font-size: 20px;
+ 
+}
+
+.set1 a:first-child button {
+  -webkit-transform: translate3d(-60px,-60px,0);
+  transform: translate3d(-60px,-60px,0);
+}
+
+.set1 a:nth-child(2) button {
+  -webkit-transform: translate3d(60px,-60px,0);
+  transform: translate3d(60px,-60px,0);
+}
+
+.set2 a:first-child button {
+  -webkit-transform: translate3d(-60px,60px,0);
+  transform: translate3d(-60px,60px,0);
+}
+
+.set2 a:nth-child(2) button {
+  -webkit-transform: translate3d(60px,60px,0);
+  transform: translate3d(60px,60px,0);
+}
+
+.hovereffect:hover hr:nth-child(3) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-90deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-90deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover hr:nth-child(4) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-180deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-180deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover .set1 button, .hovereffect:hover .set2 button {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  
+}
+
+
+

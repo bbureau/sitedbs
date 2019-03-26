@@ -15,7 +15,7 @@
 <title>Hello world with Bootstrap</title>
 </HEAD>
 
-<nav class="navbar fixed-top navbar-expand-lg  "style="background-color: #000137;">
+<nav class="navbar fixed-top navbar-expand-lg "style="background-color: #000137;">
   <a class="navbar-brand" href="../accueil/accueil.php"><img  src="../Header/LogodBs.png" width="200" height="100" id="image"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
