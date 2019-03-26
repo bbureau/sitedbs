@@ -17,9 +17,11 @@
             <div class="overlay">
                 <h2 id="titre">"La vie sans musique est tout simplement une erreur, une fatigue, un exil."</h2>
                 <p class="set1">
-                    <a href="#">
+                    <a class="col col-lg-2">
                         <button type="button" class="btn btn-light bouton" id="bouton1">Galerie</button>
                     </a>
+				
+				
                     <a href="#">
                         <button type="button" class="btn btn-light bouton" id="bouton2">Calendrier</button>
                     </a>
