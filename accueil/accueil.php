@@ -40,19 +40,5 @@
     </div>
 	
 
-	<footer class="page-footer font-small blue">
-	<div>
-		<ul>
-			<li><a href="../partenariat/partenariat.php"> Sponsors et partenariats </a></li>
-			<li><a href="../galerie/galerie.php"> Galerie </a></li>
-		</ul>
-	</div>
-	<div>
-		<ul>
-			<li><a href="../Gestion-du-materiel/Gestion-du-materiel.php"> gestion du matériel </a></li>
-		</ul>
-	</div>	
-	
 	</body>
-	</footer>
 </html>
