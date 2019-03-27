@@ -7,6 +7,8 @@
 /* -o-background-size: cover; */
 /* background-size: cover; */
 /* } */
+
+
 #titre {
 	font-size:xx-large
 }
@@ -14,7 +16,7 @@
 
 
 #bouton1{
-	width:30%;
+	width:35%;
 	height:100%;
 	
 	background:url("dj.jpg");
@@ -31,9 +33,10 @@
 }
 
 #bouton2{
-	background:url("concert.jpg");
-	width:30%;
+	width:35%;
 	height:100%;
+	background:url("concert.jpg");
+	
 	background-size: 100%;
 	color:white;
 	border-width:3px;
@@ -46,7 +49,7 @@
 }
 
 #bouton3{
-	width:30%;
+	width:35%;
 	height:100%;
 	background:url("table.jpg");
 	background-size: 100%;
@@ -61,7 +64,7 @@
 }
 
 #bouton4{
-	width:30%;
+	width:35%;
 	height:100%;
 	background:url("festival.jpg");
 	background-size: 100%;
@@ -73,6 +76,7 @@
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+	position:align;
 }
 
 #bouton1:hover{
@@ -138,7 +142,7 @@
 }
 
 .hovereffect a.info {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
   text-transform: uppercase;
@@ -209,7 +213,7 @@
 
 .hovereffect p {
   width: 100%;
-  height:20%;
+  height:25%;
   text-transform: none;
   font-size: 15px;
   line-height: 2;
@@ -218,7 +222,7 @@
 
 .hovereffect p a {
   color: #fff;
-  margin:100px;
+  margin:5%;
 }
 
 .hovereffect p a:hover,

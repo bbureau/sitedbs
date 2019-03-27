@@ -22,9 +22,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="../accueil/accueil.php">Page d'acceuil <span class="sr-only">(current)</span></a>
-      </li>
+      
       <li class="nav-item">
         <a class="nav-link" href="../contacts/contacts.php">Page de contacts</a>
       </li>
@@ -65,52 +63,6 @@
 
 
 <body>
-<!--<header>
-
-	
-
-
-	
-	
-	<img  src="../Header/LogodBsnoir.png" width="200" height="100"  style="float:left;margin:0 10px 0 20px;"/>
-	
-	<div  id="recherche">
-		<ul>
-			<li><a href="../accueil/accueil.php">Page d'accueil</a></li>
-			
-			<li><a href="../contacts/contacts.php">Page de contacts</a></li>
-			
-			<li><a href="../Mentions-legales/Mentions-legales.php">Mentions légales</a></li>
-			<li><a href="../Calendrier/Calendrier.php">calendrier</a></li>
-			<li><a href="../Panier/Panier.php">Panier</a></li>
-				
-			<li><a href="../Catalogue/Catalogue.php">Catalogue</a>
-				<div class="sousmenu">
-				<ul>
-					<li ><a href= "../Article/Article.php"> Articles </a></li>
-					<li><a href="../Pack/Pack.php"> Pack </a></li>
-					<li><a href="../Prestation/Prestation"> Prestations </a></li>
-				</ul>
-				</div>
-			</li>
-		</ul>
-	</div>
-	
-	
-	
-	
-	
-	
-
-</header> 
--->
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-
-
 
 
 

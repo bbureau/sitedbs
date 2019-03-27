@@ -12,6 +12,8 @@
 }
 
 
+
+
 #catalogue a:hover{
 	background-color: #007bff;
 	color: #ffffff;
@@ -22,6 +24,7 @@
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+	
 }
  #image:hover{
 	-webkit-transform: scale(1.2);
