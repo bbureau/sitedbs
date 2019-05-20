@@ -4,6 +4,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<title> PageArticle </title>
+		<link id ="css" rel="stylesheet" media="screen, print, handheld" type="text/css" href="../Calendrier_Dispo/calendrier_dispo.css" />
+    <script src="../Calendrier_Dispo/jquery.js"></script>
+    <script type="text/javascript" src="../Calendrier_Dispo/calendrier_dispo.js"></script>
 	</head>
 	<body>
 	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
@@ -59,6 +62,37 @@ while (!feof($fp))
 
 fclose ($fp);
 ?>
+
+<!--affichons un calendrier des disponibilité -->
+<!--Pour cela récupérons les dates de locations -->
+<?php
+
+$req = $bdd->prepare('SELECT Debut, Fin FROM Locations WHERE ID = ? ');
+$req->execute(array($_GET['ID']));
+$info_loca = $req->fetch();
+
+echo '<script> var nb_dispo =parseInt('.$donnees[Quantite].',10);
+var Loca_Debut = "'. $info_loca[Debut].'";
+var Loca_Fin = "'. $info_loca[Fin].'";
+var Loca= [Loca_Debut,Loca_Fin];</script>';
+while ($info_loca = $req->fetch())
+{
+ 
+echo '<script>
+var Loca_Debut = "'. $info_loca[Debut].'";
+var Loca_Fin = "'. $info_loca[Fin].'";
+Loca.push(Loca_Debut);
+Loca.push(Loca_Fin);
+
+</script>';
+
+}
+
+$req->closeCursor();
+
+?>
+
+<div id="calendar" class="calendar"><script>new Calendar('#calendar', Loca, nb_dispo);</script></div>
 <!--  Maintenant passons au formulaire de réservation -->
 
 <?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .'">' ?>

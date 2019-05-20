@@ -1,3 +1,4 @@
+
 CREATE TABLE IF NOT EXISTS `Resource` (
 	`ID`	TEXT,
 	`TXT`	TEXT,
@@ -95,6 +96,16 @@ INSERT INTO `Resource` VALUES ('CA15','CA15','CA15');
 INSERT INTO `Resource` VALUES ('CA16','CA16','CA16');
 INSERT INTO `Resource` VALUES ('CA17','CA17','CA17');
 INSERT INTO `Resource` VALUES ('CA18','CA18','CA18');
+CREATE TABLE IF NOT EXISTS `Packs` (
+	`IDPack`	INTEGER,
+	`Nom`	INTEGER,
+	`Prix`	INTEGER
+);
+INSERT INTO `Packs` VALUES (1,'Pack son petite sonorisation',0);
+INSERT INTO `Packs` VALUES (2,'Pack son petite soirée',0);
+INSERT INTO `Packs` VALUES (3,'Pack son moyenne soirée',0);
+INSERT INTO `Packs` VALUES (4,'Pack lights moyenne soirée',0);
+INSERT INTO `Packs` VALUES (5,'Pack lights petite soiree',0);
 CREATE TABLE IF NOT EXISTS `Locations` (
 	`ID`	TEXT,
 	`Locataire`	TEXT,
@@ -103,6 +114,42 @@ CREATE TABLE IF NOT EXISTS `Locations` (
 	`Caution`	TEXT,
 	`Prix`	TEXT
 );
+CREATE TABLE IF NOT EXISTS `Correspack` (
+	`IDPack`	INTEGER,
+	`ID`	INTEGER,
+	`Quantité`	INTEGER
+);
+INSERT INTO `Correspack` VALUES (1,'EN08',1);
+INSERT INTO `Correspack` VALUES (1,'CA17',1);
+INSERT INTO `Correspack` VALUES (1,'CA12',1);
+INSERT INTO `Correspack` VALUES (1,'M001',1);
+INSERT INTO `Correspack` VALUES (2,'CA05',1);
+INSERT INTO `Correspack` VALUES (2,'EN09',2);
+INSERT INTO `Correspack` VALUES (2,'EN09',1);
+INSERT INTO `Correspack` VALUES (2,'T002',1);
+INSERT INTO `Correspack` VALUES (2,'CA05',5);
+INSERT INTO `Correspack` VALUES (2,'CA05',1);
+INSERT INTO `Correspack` VALUES (2,'CA12',4);
+INSERT INTO `Correspack` VALUES (3,'EN09',2);
+INSERT INTO `Correspack` VALUES (3,'EN09',1);
+INSERT INTO `Correspack` VALUES (3,'T002',1);
+INSERT INTO `Correspack` VALUES (3,'CA05',5);
+INSERT INTO `Correspack` VALUES (3,'CA05',1);
+INSERT INTO `Correspack` VALUES (3,'CA12',4);
+INSERT INTO `Correspack` VALUES (3,'EN02',1);
+INSERT INTO `Correspack` VALUES (3,'E001',1);
+INSERT INTO `Correspack` VALUES (3,'A02',1);
+INSERT INTO `Correspack` VALUES (3,'CA08',1);
+INSERT INTO `Correspack` VALUES (4,'LU13',2);
+INSERT INTO `Correspack` VALUES (4,'LU01',2);
+INSERT INTO `Correspack` VALUES (4,'LU05',1);
+INSERT INTO `Correspack` VALUES (4,'LU08',1);
+INSERT INTO `Correspack` VALUES (4,'CA04',5);
+INSERT INTO `Correspack` VALUES (4,'LU03',1);
+INSERT INTO `Correspack` VALUES (5,'LU01',2);
+INSERT INTO `Correspack` VALUES (5,'LU05',1);
+INSERT INTO `Correspack` VALUES (5,'CA04',5);
+INSERT INTO `Correspack` VALUES (5,'LU03',1);
 CREATE TABLE IF NOT EXISTS `BaseDeDonnee` (
 	`Nom`	TEXT,
 	`Marque`	TEXT,

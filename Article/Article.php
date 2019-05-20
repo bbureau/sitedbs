@@ -61,7 +61,8 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
        <input type="checkbox" name="Effects" id="Effects" checked onchange="fonctionCategorie('Effects');"/> <label for="Effects">Effects</label><br />
        <input type="checkbox" name="Enceintes" id="Enceintes" checked onchange="fonctionCategorie('Enceintes');"/> <label for="Enceintes">Enceintes</label><br />
        <input type="checkbox" name="Lumieres" id="Lumieres" checked onchange="fonctionCategorie('Lumieres');"/> <label for="Lumieres">Lumieres</label><br />
-       <input type="checkbox" name="Cable" id="Cable" checked onchange="fonctionCategorie('Cable');"/> <label for="Cable">Cables</label>
+       <input type="checkbox" name="Cable" id="Cable" checked onchange="fonctionCategorie('Cable');"/> <label for="Cable">Cables</label><br />
+       <input type="range" name="prix" id="prix"/>
    </p>
 </form>
 <?php

@@ -1,0 +1,93 @@
+Nom,Marque,Caution,Etat,Quantite,Categorie,Disponible,Prix,Details,ID
+,,,,,,,,,
+Micro Shure SM58,Shure,110,ok,4,Micro,-,-,,M001
+Micro Shure SM57,Shure,109,ok,2,Micro,-,-,,M002
+Micro Shure Beta 58A,Shure,180,ok,1,Micro,-,-,,M003
+Micro Shure 10A,Shure,-,ok,2,Micro,-,-,,M004
+Micro Shure PG81,Shure,140,ok,1,Micro,-,-,,M005
+Micro Superlux PRA-228A,Superlux,60,ok,2,Micro,-,-,,M006
+Micro Superlux PRA-218A,Superlux,60,ok,1,Micro,-,-,,M007
+Micro Sennheiser md421,Sennheiser,400,ok,1,Micro,-,-,,M008
+Micro Audio Technica MB6K,Audio technica,90,ok,1,Micro,-,-,,M009
+Micro Sennheiser e835,Sennheiser,99,ok,1,Micro,-,-,,M010
+Micro special grosse caisse,-,-,ok,1,Micro,-,-,,M011
+Micro Berhringer Ultravoice,Berhinger,-,ok,2,Micro,-,-,,M012
+Micro AKG D5,AKG,95,ok,1,Micro,-,-,,M013
+Sennheiser UHF Vocal Set fp 35 C EU,Sennheiser,269,-,1,Micro,-,-,,M014
+Ampli QSC Audio RMX 850,QSC,450,ok,4,Ampli,-,-,,A01
+Ampli QSC Audio RMX 1450,QSC,500,ok,3,Ampli,-,-,,A02
+Ampli QSC Audio RMX 2450,QSC,800,ok,1,Ampli,-,-,,A03
+Ampli STA Club 1503,STA,350,ok,1,Ampli,-,-,,A04
+Table de mixage Allen & Heath GL2400,Allen&Heath,,ok,1,Table de mixage,-,-,,T001
+Table Pioneer XDJ-RX + flight case,Pioneer,,ok,1,Table de mixage,-,-,,T002
+Table Pioneer DJM 700,Pioneer,620,ok,1,Table de mixage,-,-,,T003
+Table de mixage Behringer Xenyx X1204 USB,Behringer,130,ok,1,Table de mixage,-,-,,T004
+Table de mixage Behringer DJX700,Berhringer,169,ok,1,Table de mixage,-,-,,T005
+Table de mixage Mackie CFX 16,Mackie,716,ok,1,Table de mixage,-,-,,T006
+Platine Denon SC 2900,Denon,560,ok,2,Table de mixage,-,-,,T007
+Filtre Behringer CX 2300,Behringer,70,ok,1,Effects,-,-,,E001
+Equalizer EQ Crest CPQ 2131P,EQ Crest,300,ok,2,Effects,-,-,,E002
+Equalizer EQ Crest CPQ 2215P,EQ Crest,300,ok,1,Effects,-,-,,E003
+Compresseur + Gate dbx 266XL,DBX,180,ok,3,Effects,-,-,,E004
+Reverb + Delay TC Electronics M350,TC electronics,200,ok,1,Effects,-,-,,E005
+Cordial Multi 24 + Sac de transport,-,480,ok,1,Effects,-,-,,E006
+Line Splitter Palmer PLS 02,Palmer,222,ok,1,Effects,-,-,,E007
+DI stereo Samson S-Direct Plus,Samson,40,ok,3,Effects,-,-,,E008
+DI Box AR116 BSS,-,100,ok,1,Effects,-,-,,E009
+DI Alctron 120,-,39,ok,2,Effects,-,-,,E010
+DI Millenium 66,-,35,ok,1,Effects,-,-,,E011
+Ultra DI Pro Berhringer DI 4000,behringer,90,ok,1,Effects,-,-,,E012
+Millenium sp8 splitter,Millenium,98,ok,1,Effects,-,-,,E013
+Enceintes Yamaha SM121V,Yahama,250,ok,2,Enceintes,-,-,,EN01
+Enceintes EV Sx 300,EV,650,ok,2,Enceintes,-,-,,EN02
+Enceintes D.A.S DS15,DAS,725,ok,2,Enceintes,-,-,,EN03
+Enceintes ALS QG-15,ALS,500,"1 ok, 1 HS",2,Enceintes,-,-,,EN04
+Enceintes Sub ALS (500W),Sub,400,ok,2,Enceintes,-,-,,EN05
+Caissons Atelier 33 /Haut-parleurs Eminence Sigma Pro 18A-2,Eminence,500,ok,4,Enceintes,-,-,,EN06
+Enceintes EV ELX 115,EV,340,ok,2,Enceintes,-,-,,EN07
+Enceinte active Yamaha DXR8,Yamaha,595,ok,1,Enceintes,-,-,,EN08
+Enceintes EV ZLX 12P,,378,ok,2,Enceintes,-,-,,EN09
+Enceinte active Solton MF 300A,Solton,285,ok,1,Enceintes,-,-,,EN10
+Enceinte JBL,JBL,519,ok,2,Enceintes,-,-,,EN11
+Scan ROBE 575 XT,ROBE,-,4 ok / 1 HS,5,Lumieres,-,-,,LU01
+Scan Nicols Pat HID,Nicols,350,ok,3,Lumieres,-,-,,LU02
+Showtec Sunstrip Active DMX,Showtec,290,ok,2,Lumieres,-,-,,LU03
+Botex MPX-405 Dimmer,Botex,140,ok,5,Lumieres,-,-,,LU04
+Strobo Martin Atomic 3000,Martin atomic,700,ok,1,Lumieres,-,-,,LU05
+Lumiere noire Nicols UV panel 363,Nicols,209,ok,1,Lumieres,-,-,,LU06
+G-Tech HighLase 250G,Highlase,790,ok,1,Lumieres,-,-,,LU07
+Antari Z1200 II Fog Machine,Antari,300,ok,1,Lumieres,-,-,,LU08
+PAR (grand),,50,"10 ok, 5 sans lampe, 1 cable alim casse",15,Lumieres,-,-,,LU09
+PAR (petit),,18.9,"2 ok, 4 sans lampe",6,Lumieres,-,-,,LU10
+DTS Scena 300/500 MK2 PC Anti Halo,Scena,117,ok,2,Lumieres,-,-,,LU11
+DTS Scena 650/1000 MK2 PC Anti Halo,Scena,135,1 ok 3 lampe HS,4,Lumieres,-,-,,LU12
+Stairville B5R Beam Moving Head 5R,Stairville,998,ok,2,Lumieres,-,-,,LU13
+Boitier Sunlite suite 2 Basic Class,Sunlite,429,ok,2,Lumieres,-,-,,LU14
+Controleur DMX Starway CHAMAN,Starway,35,?,1,Lumieres,-,-,,LU15
+Controleur DMX Starway CHEYEN,Starway,40,?,1,Lumieres,-,-,,LU16
+Channel dispatching Starway TIWA,Starway,49,?,1,Lumieres,-,-,,LU17
+Channels dimming console Starway CHEYEN,Starway,190,?,1,Lumieres,-,-,,LU18
+Pied de levage (grand) Alu Tech ALT 450,Alu tech,,ok,2,Lumieres,-,-,,LU19
+Pied de levage (petit) Mobil Tech 4aF Mini,Mobil tech,200,ok,2,Lumieres,-,-,,LU20
+Pad AKAI APC 40,AKAI,299,ok,1,Lumieres,-,-,,LU21
+Rail portatif (2m),,200,ok,3,Lumieres,-,-,,LU22
+Boule a facettes,,-,ok,1,Lumieres,-,-,,LU23
+Antichute de charge 250 kg,,-,,2,Lumieres,-,-,,LU24
+> 9m,,,,19,Cable,-,-,XLR,CA01
+< 9m,,,,39,Cable,-,-,XLR,CA02
+Petits,,,,7,Cable,-,-,XLR,CA03
+DMX (sans compter rail),,,,26,Cable,-,-,DMX,CA04
+XLR male,,,,?,Cable,-,-,XLR-Jack,CA05
+XLR femelle,,,,8,Cable,-,-,XLR-Jack,CA06
+Jack,,,,14,Cable,-,-,XLR-Jack,CA07
+Speakon,,,,14,Cable,-,-,Speakon,CA08
+Grandes,,,,2,Cable,-,-,Rallonges,CA09
+Moyennes - petites,,,,19,Cable,-,-,Rallonges,CA10
+Enrouleurs,,,,6,Cable,-,-,Rallonages,CA11
+Alimentations,,,,44,Cable,-,-,Alims,CA12
+Rallonges d'alimentations,,,,5,Cable,-,-,Rallonges d'alims,CA13
+XLR -rca simple,,,,1,Cable,-,-,Autres,CA14
+RCA doubles,,,,3,Cable,-,-,Autres,CA15
+RCA simple,,,,2,Cable,-,-,Autres,CA16
+RCA double- petit jack,,,,4,Cable,-,-,Autres,CA17
+RCA double - double jack,,,,1,Cable,-,-,Autres,CA18
