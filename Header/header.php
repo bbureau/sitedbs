@@ -15,34 +15,38 @@
 <title>Hello world with Bootstrap</title>
 </HEAD>
 
-<nav class="navbar fixed-top navbar-expand-lg "style="background-color: #000137;">
-  <a class="navbar-brand" href="../accueil/accueil.php"><img  src="../Header/LogodBs.png" width="200" height="100" id="image"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar fixed-top navbar-expand-sm "style="background-color: #000137;">
+  <a class="navbar-brand" href="../accueil/accueil.php" id="image"><img  src="../Header/LogodBs.png" width="200" height="100" id="image"/></a>
+	
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
-      <li class="nav-item">
-        <a class="nav-link" href="../Contacts/contacts.php">Page de contacts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../Mentions-legales/Mentions-legales.php">Mentions légales</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="../Calendrier/Calendrier.php">Calendrier</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link " href="../Panier/Panier.php">Panier</a>
-      </li>
-	   <!-- groupe de boutons -->
-	  <li  class="nav-item">
+    <ul class="navbar-nav ">
+	 <li  class="nav-item ">
 		<a class="nav-link" href="../catalogue/catalogue.php">Catalogue</a>
 	  </li>
 	<div class="btn-group">
 	<button type="button" class="btn dropdown-toggle dropdown-toggle-split text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
     <span class="sr-only ">Toggle Dropdown</span>
 	</button>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="../Contacts/contacts.php">Page de contacts</a>
+      </li>
+<!--      <li class="nav-item">
+        <a class="nav-link" href="../Mentions-legales/Mentions-legales.php">Mentions légales</a>
+      </li> -->
+	  <li class="nav-item">
+		<a class="nav-link" href="../Galerie/Galerie.php">Galerie</a>
+		</li>
+      <li class="nav-item">
+        <a class="nav-link " href="../Calendrier/Calendrier.php">Calendrier</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link " href="../Panier/Panier.php">Panier</a>
+      </li>
+	   <!-- groupe de boutons -->
+	 
+	
 	<div class="dropdown-menu" id="catalogue">
 		<a class="dropdown-item" href="../Article/Article.php">Articles</a>
 		<a class="dropdown-item" href="../Pack/Pack.php">Packs</a>

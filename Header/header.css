@@ -11,6 +11,18 @@
     border: 1px solid rgba(86,61,124,.2);
 }
 
+#image {
+  max-width: 100%;
+  height: auto;
+   -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;}
+}
+ul>li{
+	vertical-align: middle;
+}
 
 
 
@@ -19,114 +31,22 @@
 	color: #ffffff;
 }
 
-#image {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	
-}
- #image:hover{
-	-webkit-transform: scale(1.2);
-	transform: scale(1.15);
-}
-
-
-
-
-
-
-
-#recherche {
-	position: absolute;
-	top:92px;
-	width:100%;
-	left:0;
-	margin:0px;
-	padding:0px;
-	
-	
-}
-#recherche li:hover{
-	background-color:#B22222;
-}
-
-#recherche .sousmenu li:hover{
-	background-color:#6E0B14;
-	
-}
-
-#recherche .sousmenu li{
-	border-top: 0px solid #FFFFFF;
-	border-bottom: 0px solid #FFFFFF
-}
-
-
-
-
-
-
-.sousmenu{
-	display: none;
-}
-
- #recherche li:hover .sousmenu{
-	display: block;
-	position:absolute;
-	top: 40px;
-	width:100%;
-	
-	
-	text-align:center;
-	
-	
-}
-
-
-#recherche ul{
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	background-color:#000000;
-}
-
-
-#recherche > ul >li{
-	
-	
-	position: relative;
-	display: inline-block;
-	width: 16.3%;
-	height:40px;
-	margin:0px;
-	padding:0px;
-	border-right:1px solid#000000;
-	text-align: center;
-	line-height:40px;
-	font-family:'HandelGothicTLRegular';
-	
-	
-	font-weight: bold;
-	
-
-
-}
-
-
-
-
-
-
-#recherche  a{
-	
-	
-	font-size: x-large;
-	color:#FFFFFF;
-	
-}
 
 Header{
 	width:100%
+}
+
+#image:hover{   -webkit-transform:scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:scale(1.10); /* Opera */
+     transform:scale(1.10);
+	 
+	 -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;}
 }
 
 

@@ -13,13 +13,18 @@
 	font-size:xx-large
 }
 
+#fond {
+	margin-top:50px;
+	width:100%;
+	height:100%
+}
 
 
 #bouton1{
 	width:35%;
 	height:100%;
 	
-	background:url("dj.jpg");
+	background:url("table.jpg");
 	background-size: 100%;
 	color:white;
 	border-width:3px;
@@ -51,7 +56,7 @@
 #bouton3{
 	width:35%;
 	height:100%;
-	background:url("table.jpg");
+	background:url("dj.jpg");
 	background-size: 100%;
 	color:white;
 	border-width:3px;
