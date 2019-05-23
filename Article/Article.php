@@ -4,16 +4,164 @@
 	<head>
 		<meta charset="utf-8" />
 		<title> Article </title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="../Calendrier_Dispo/jquery.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+<!-- Fonction définissant le slider-->
+
+		<script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 0, 500 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        var min = $( "#slider-range" ).slider( "values", 0 );
+      	var max = $( "#slider-range" ).slider( "values", 1 );
+    document.getElementById("affichage_prix").textContent = min +"€ - " + max  +"€";},
+
+        change: function( event, ui ) {
+      	var min = $( "#slider-range" ).slider( "values", 0 );
+      	var max = $( "#slider-range" ).slider( "values", 1 );
+      	
+      	query = document.querySelectorAll("#Micro");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Micro[i-1] <= max && Prix_Micro[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+query = document.querySelectorAll("#Ampli");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Ampli[i-1] <= max && Prix_Ampli[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+query = document.querySelectorAll("#TableDeMixage");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_TableDeMixage[i-1] <= max && Prix_TableDeMixage[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+query = document.querySelectorAll("#Effects");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Effects[i-1] <= max && Prix_Effects[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+query = document.querySelectorAll("#Enceintes");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Enceintes[i-1] <= max && Prix_Enceintes[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+query = document.querySelectorAll("#Lumieres");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Lumieres[i-1] <= max && Prix_Lumieres[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+  query = document.querySelectorAll("#Cable");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Cable[i-1] <= max && Prix_Cable[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+  }
+   });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+   } );
+  </script>
 	</head>
 	<body>
-	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
+	  <?php // include("../Header/header.php"); ?>  <!-- inclus les liens visibles partout-->
 
 	
-	<div style="background-color:lightblue">
-		<ul>
-			<li><a href="../tous-les-articles/tous-les-articles.php"> Tous les articles </a></li>
-		</ul>
-	</div>
+	
 	
 	<!-- Récupérons les articles de la base de données-->
 	<?php
@@ -26,21 +174,27 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
+$reponse = $bdd->query('SELECT Nom, ID, Categorie, Prix FROM BaseDeDonnee');
 ?>
 
 <!-- Mettons en place le formulaire  de tri -->
 
 <script type="text/javascript">
+	
+
       function fonctionCategorie(Cat) {
-      	// On considere tout les éléments ayant pour ID Cat (il y a la case du formulaire et les éléments à afficher)
-        query = document.querySelectorAll("#" + Cat);
+      	var min = $( "#slider-range" ).slider( "values", 0 );
+      	var max = $( "#slider-range" ).slider( "values", 1 );
+      	
+      	query = document.querySelectorAll("#Micro");
         //si la case est cochée
 		if (query[0].checked) 
 		{
 			for (var i = 1; i < query.length; i++)
-			{
-				query[i].style.display="inline-block"; // on affiche tout
+			{	if (Prix_Micro[i-1] <= max && Prix_Micro[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
 			}}
 		else //sinon
 		{
@@ -49,6 +203,112 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
 				query[i].style.display="none"; // on cache tout
 			}
       }
+query = document.querySelectorAll("#Ampli");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Ampli[i-1] <= max && Prix_Ampli[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+query = document.querySelectorAll("#TableDeMixage");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_TableDeMixage[i-1] <= max && Prix_TableDeMixage[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+query = document.querySelectorAll("#Effects");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Effects[i-1] <= max && Prix_Effects[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
+query = document.querySelectorAll("#Enceintes");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Enceintes[i-1] <= max && Prix_Enceintes[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+query = document.querySelectorAll("#Lumieres");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Lumieres[i-1] <= max && Prix_Lumieres[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+  query = document.querySelectorAll("#Cable");
+        //si la case est cochée
+		if (query[0].checked) 
+		{
+			for (var i = 1; i < query.length; i++)
+			{	if (Prix_Cable[i-1] <= max && Prix_Cable[i-1] >= min) 
+				{query[i].style.display="inline-block";}
+				else 
+				{query[i].style.display="none";}// on affiche tout
+			}}
+		else //sinon
+		{
+			for (var i = 1; i < query.length; i++)
+			{
+				query[i].style.display="none"; // on cache tout
+			}
+      }
+
   }
     </script>
 <form>
@@ -62,17 +322,33 @@ $reponse = $bdd->query('SELECT Nom, ID, Categorie FROM BaseDeDonnee');
        <input type="checkbox" name="Enceintes" id="Enceintes" checked onchange="fonctionCategorie('Enceintes');"/> <label for="Enceintes">Enceintes</label><br />
        <input type="checkbox" name="Lumieres" id="Lumieres" checked onchange="fonctionCategorie('Lumieres');"/> <label for="Lumieres">Lumieres</label><br />
        <input type="checkbox" name="Cable" id="Cable" checked onchange="fonctionCategorie('Cable');"/> <label for="Cable">Cables</label><br />
-       <input type="range" name="prix" id="prix"/>
+       
    </p>
 </form>
+<div id="affichage_prix">0€ - 500€</div>
+<div id ="slider-range"></div>
 <?php
 $donnees = $reponse->fetch();
+echo "<script>var Prix_Micro = [];
+var Prix_Ampli = [];
+var Prix_TableDeMixage = [];
+var Prix_Effects = [];
+var Prix_Enceintes = [];
+var Prix_Lumieres = [];
+var Prix_Cable = [];
 
+
+</script>";
 while ($donnees = $reponse->fetch())
 {  //on récupère le fichier correspondant
 	$trans = array("0" => "", "1" => "", "2" => "", "3" => "", "4" => "", "5" => "", "6" => "", "7" => "", "8" => "", "9" => "");
 	$dossier = strtr($donnees['ID'],$trans);
-	
+	echo "<script>
+Prix_".$donnees['Categorie'].".push(".$donnees['Prix'].");
+
+
+	</script>";
+
 // on affiche le nom du produit, le nom est un lien vesr la page décrivant le produit
 	echo '<div id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '">' . $donnees['Nom'] . '</a> <br />';
 	// on affiche l'image correspondante 
