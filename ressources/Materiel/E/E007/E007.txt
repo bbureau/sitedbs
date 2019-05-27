@@ -1,17 +1,11 @@
-Type:	Splitter de ligne
-Type de splitter:	1 in 2 + 1
-Canaux:	2
-Entr¨¦es:	2
-Connecteurs d'entr¨¦e:	XLR
-Niveau d'entr¨¦e maxi:	+ 20 dB
-Nombre de sorties splitt¨¦es par canal:	2
+Canaux: 2
+Entrees: 2
+Connecteurs d'entree:	XLR
+Niveau d'entree maxi:	+ 20 dB
+Nombre de sorties splittees par canal:	2
 Nombre de sorties THRU par canal:	1
 Niveau de sortie maxi:	+ 20 dB
 Connecteurs de sortie:	XLR
-Sorties (sym¨¦trie par transformateur):	Oui
-R¨¦glages:	Levage de masse (Ground Lift)
-Mat¨¦riau coffret:	Aluminium moul¨¦ sous pression
-Surface de la coffret:	rev¨ºtement poudre
 Largeur:	95 mm
 Profondeur:	120 mm
 Hauteur (mm):	55 mm

@@ -7,50 +7,7 @@ Input Impedance : 60 kOhms, balanced
 Nominal Operating Level : -10 dBV to +4 dBu
 Maximum Input Level : +20 dBu balanced and unbalanced (unity gain)
 CMR : better than 40 dB
-OUTPUTS
 
-Type :
-electronically servo-balanced output stage (optional transformer-balanced).
-automatic level correction for unbalanced use (correction: 6 dB).
-Output Impedance : 40 Ohms, balanced and unbalanced
-Maximum Output Level : +26 dBu balanced, +21 dBu unbalanced
-Bandwidth : 5 Hz to 100 kHz, +0, -1 dB
-THD @ +4 dBu : 0.005 % typ.
-IMD (SMPTE) @ +10 dBu : 0.01 % typ.
-Noise & Hum, unity gain : -92 dBu (20 Hz to 22 kHz, unweighted)
-Crosstalk @ 20 kHz : better than -50 dBu
-POLARITY switches : all outputs can be reversed
-FILTER
-
-Type : State variable 24 dB/octave Linkwitz-Riley filter
-MODE switch : stereo 2-way or mono 3-way selectable
-RANGE switch : switchable 90 to 900 Hz / 900 Hz to 9 kHz
-X-OVER FREQ. control : variable 90 to 900 Hz / 900 Hz to 9 kHz
-LF DELAY control : variable 0 to 2 ms
-LF GAIN control : variable -6 to +6 dB
-HF GAIN control : variable -6 to +6 dB
-LF/HF MUTE switches : outputs can be switched off
-LIMITER
-
-Type : Interactive Programme Limiter
-THRESHOLD control : variable -6 to +18 dBu
-LIMITER switch : band limiters can be activated globally
-LIM LED : indicates the operation of the band-specific limiter
-FUNCTIONS
-
-MONO BASS switch : in stereo mode both bass outputs can be summed
-CD EQ switch : allows for CD Horn frequency correction
-INDICATORS
-
-SWITCH LED indicators : all active switches are illuminated
-MODE LED indicators : highlight the active controls in 2-way or 3-way mode
-POWER SUPPLY
-
-Mains Voltages : 100-120/200-240 VAC 50-60 Hz
-Power Consumption : 20 Watts
-Fuse : 315 mA (100-120 V); 160 mA (200-240 V) slow-blow
-Mains Connection : standard IEC receptacle
-PHYSICAL
 
 Dimension : 13/4" (44.5 mm)H * 19" (482.6 mm) * 8.5" (217 mm)
 Net Weight : 3 kg

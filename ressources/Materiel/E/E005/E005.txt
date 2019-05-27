@@ -2,6 +2,5 @@
 256 Multieffect/Reverb presets
 99 User Presets
 Full DAW integration via a VST / AU compatible editor
-Automatic adjustment / detection of 24-bit SPDIF digital I / O (coax) of 44.1-48 kHz
 6.3 mm Jack connectors IN/OUT
 Midi IN/OUT interface

@@ -1,36 +1,12 @@
-
-Input Connectors	1/4" TRS and XLR, Floating Balanced; XLR: Pin 2 hot Phone: Tip Hot HI
-Input Impedance	40k¦¸ balanced/unbalanced
+Input Impedance	40kohm
 Max Input	+22dBu
 CMRR	>40dB (Any Frequency)
-Sidechain	1/4" TRS Phone, Normalled: Ring = Output (send); tip = Input (return)
-Sidechain Impedance	>10k¦¸
-Sidechain Output Impedance	¡Ü2k¦¸
-Sidechain Max Input Level	+21dBu
 Output Connectors	1/4" TRS phone and XLR floating balanced, XLR: Pin 2 and Tip Hi
-Output Impedance	200¦¸ balanced, 100¦¸ unbalanced
-Max Output	+21dBu into 600¦¸
+Output Impedance	200¦¸ balanced, 100ohm¸ unbalanced
+Max Output	+21dBu into 600ohm¸
 Frequency Response	Flat: 20Hz-20kHz, +0, -0.5dB
 Noise	<-93dBu unweighted
-THD+Noise	Typically <0.2%; Any Amount of Compression @1kHz
-IMD	Typically <0.2% SMPTE
-Compressor Threshold Range	-40dBu to +20dBu
-Compressor Threshold Characteristic	Selectable OverEasy? or hard knee
-Compressor Ratio	1:1 to Infinity:1
-Compressor Attack Time	Scalable program-dependent
-Compressor Release Time	Scalable program-dependent
 Expander/Gate Threshold Range	-60 to +10dB
-Expander/Gate Ratio	1:1 to 4:1
-Expander/Gate Max Depth	>60dB
-Expander/Gate Attack Time	<100¦Ìs
-Expander/Gate Release Time	Adjustable, 30ms to 3sec (to 30dB attenuation)
-Limiter Threshold Range	0dBu to +20dBu
-Gain Adjustment Range	Variable; -20dB to +20dB
-Interchannel Crosstalk	<-93dB @ 1kHz
-Dynamic Range	>114 dB, unweighted
-Stereo Coupling	True RMS Power Summing?
 Power Consumption	15 Watts Maximum
 Dimensions	1.75" x 19" x 6.75" (4.45 cm x 48.2 cm x 17.15 cm)
 Unit Weight	5 lbs (2.3 kg)
-Shipping Weight	7 lbs (3.2 kg)
-Reference	0dBu = 0.775Vrms
