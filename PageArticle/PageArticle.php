@@ -101,7 +101,7 @@ $req->closeCursor();
 <label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/>
 <label for= "Date_Fin"> Date de fin de réservation </label> : <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/>
 <label for= "Mail"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
-<input type="submit" value="RESERVER" />
+<input type="submit" value="AJOUTER AU PANIER" />
 </form>
 
 <!-- Dans le cas où les variables existent (=on a cliqué sur résever), on envoie le mail et on en informe l'utilisateur -->
@@ -151,7 +151,7 @@ if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fi
  
     	else {
     		echo "<script>
-    		alert('L\'email n\'a pas été envoyé !');
+    		alert('L'article a bien été ajouté au panier');
     		</script>";
 	//ATTENTION: la suite de ce code sera à déplacer dans le cas où le mail a bien été envoyé lorsque l'on passera sur le serveur en ligne
 	//La demande étant possible on actualise la base de données comptenant les locations
@@ -164,6 +164,11 @@ if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fi
     		'Caution' => $donnees['Caution'],
     		'Prix' => $donnees['Prix']
 										));
+
+			$_SESSION['Locations'][] = array($donnees['ID'],$DateD,$DateF);
+			
+			
+
 
 			}
 
