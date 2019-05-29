@@ -60,6 +60,13 @@ $donnees = $req->fetch();
 }
 
 	?>
+<form method = "post" action = "../confirmation/confirmation.php">
+<label for= "Nom"> Nom </label> : <input type = "text" name="Nom" id = "Nom" required/>
+<label for= "Prenom"> Prénom </label> : <input type = "text" name="Prenom" id = "Prenom" required />
+<label for= "Mail"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
+<input type="submit" value="RESERVER" />
+</form>
+
 	
 	</body>
 </html>
