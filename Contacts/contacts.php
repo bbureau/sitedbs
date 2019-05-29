@@ -20,7 +20,7 @@
     <!-- Team Member 1 -->
     <div class="col-xl-12 col-md-6 mb-6">
       <div class="card">
-        <img src="Prez_DBS.jpg" class="card-img-top " alt="..." id="image1">
+        <img src="Prez_DBS.png" class="card-img-top " alt="..." id="image1">
 		
 		<ul class="fa-ul" id="text">
 			<i><span class="fa-li fa fa-phone fa-lg" aria-hidden="true" ></span>Telephone:xxxxxxxxxx</i><br>
@@ -36,7 +36,7 @@
     <!-- Team Member 2 -->
     <div class="col-xl-12 col-md-6 mb-6">
       <div class="card border-0 shadow">
-        <img src="SG_DBS.png" class="card-img-top" alt="..." id="image2">
+        <img src="SG_DBS.jpg" class="card-img-top" alt="..." id="image2">
         <ul class="fa-ul" id="text">
 			<i><span class="fa fa-li fa-phone fa-lg" aria-hidden="true" ></span>Telephone:xxxxxxxxxx</i><br>
 			<i><span class="fa fa-li fa-envelope" aria-hidden="true" id="lettre"></span>Adresse mail: xxxxxxxxxxx </i>
