@@ -16,9 +16,7 @@
 	
 	<?php 
 
-echo '<pre>';
-print_r($_SESSION['Locations']);
-echo '</pre>';
+
 //Connection à la base de données
 try
 {
