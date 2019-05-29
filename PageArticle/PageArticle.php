@@ -63,7 +63,31 @@ while (!feof($fp))
 fclose ($fp);
 ?>
 
+
+<?php 
+
+if (isset($_POST['Date_Debut'], $_POST['Date_Fin']))
+{
+	$trans = array("/" => "-");
+	$DateD = strtr($_POST['Date_Debut'], $trans);
+	$DateF = strtr($_POST['Date_Fin'], $trans);
+	$_SESSION['Locations'][] = array($_GET['ID'],$DateD,$DateF);
+	echo '<script>
+    		alert("L\'article a bien été ajouté au panier");
+    	 </script>';
+
+}
+
+
+?>
+
+
+
+
+
 <!--affichons un calendrier des disponibilité -->
+
+
 <!--Pour cela récupérons les dates de locations -->
 <?php
 
@@ -83,9 +107,20 @@ var Loca_Debut = "'. $info_loca[Debut].'";
 var Loca_Fin = "'. $info_loca[Fin].'";
 Loca.push(Loca_Debut);
 Loca.push(Loca_Fin);
-
 </script>';
 
+}
+foreach($_SESSION['Locations'] as $Article)
+{
+	if($Article[0] == $_GET['ID'])
+	{
+		echo '<script>
+			var Loca_Debut = "'. $Article[1].'";
+			var Loca_Fin = "'. $Article[2] .'";
+			Loca.push(Loca_Debut);
+			Loca.push(Loca_Fin);
+			</script>';
+	}
 }
 
 $req->closeCursor();
@@ -96,89 +131,12 @@ $req->closeCursor();
 <!--  Maintenant passons au formulaire de réservation -->
 
 <?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .'">' ?>
-<label for= "Nom"> Nom </label> : <input type = "text" name="Nom" id = "Nom" required/>
-<label for= "Prenom"> Prénom </label> : <input type = "text" name="Prenom" id = "Prenom" required />
 <label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/>
 <label for= "Date_Fin"> Date de fin de réservation </label> : <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/>
-<label for= "Mail"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
-<input type="submit" value="RESERVER" />
+<input type="submit" value="AJOUTER AU PANIER" />
 </form>
 
-<!-- Dans le cas où les variables existent (=on a cliqué sur résever), on envoie le mail et on en informe l'utilisateur -->
 
-<?php 
-
-if (isset($_POST['Nom'], $_POST['Prenom'], $_POST['Date_Debut'], $_POST['Date_Fin'], $_POST['Mail'])) 
-{ // Il s'agit alors de vérifier si le matériel est disponible
-//Pour cela on regarde combien d'exemplaire du matériel est loué durant cette période
-	$req2 = $bdd->prepare('SELECT ID, Debut, Fin FROM Locations WHERE ID = ? ');
-	$req2->execute(array($_GET['ID']));
-	$compteur = 0;
-	//il faut mettre les dates aux bons format
-	$trans = array("/" => "-");
-	$DateD = strtr($_POST['Date_Debut'], $trans);
-	$DateF = strtr($_POST['Date_Fin'], $trans);
-	
-	
-	while ($donnees2 = $req2->fetch())
-	{  
-		if(  ((new Datetime($DateD) >= new Datetime($donnees2['Debut'])) AND (new Datetime($DateD) <= new Datetime($donnees2['Fin'])))
-			OR ((new Datetime($DateF) >= new Datetime($donnees2['Debut'])) AND (new Datetime($DateF) <= new Datetime($donnees2['Fin'])))
-			OR (new Datetime($DateD) <= new Datetime($donnees2['Debut'])) AND (new Datetime($DateF) >= new Datetime($donnees2['Fin'])))
-		{
-			$compteur = $compteur + 1;
-
-		}
-		
-	}
-	$req2->closeCursor();
-	if (($compteur < $donnees['Quantite']) AND (new Datetime($DateD) <= new Datetime($DateF)))
-		{ //on envoie alors le mail de réservation
- 
-    	$to = "pe26decibel@gmail.com";
- 
-    	$subject = "Réservation" . $donnees['Nom'];
- 
-    	$message = $_POST['Prenom'] ." " . $_POST['Nom'] . " souhaite résever " . $donnees['Nom'] . " du " . $_POST['Date_Debut'] . " au " . ['Date_Fin'];
- 
-    	$header = "From: \"" . $_POST['Prenom'] ." " . $_POST['Nom'] ."\"<". $_POST['Mail']. ">"."\n";
-		$header .= "Reply-to: \"" . $_POST['Prenom'] ." " . $_POST['Nom'] ."\"<". $_POST['Mail']. ">";
- 
-    	if(mail($to,$subject,$message, $headers)) 
-    	{echo " <script> 
-    	alert('L\'email a été envoyé !'');
-    	</script>";}
- 
-    	else {
-    		echo "<script>
-    		alert('L\'email n\'a pas été envoyé !');
-    		</script>";
-	//ATTENTION: la suite de ce code sera à déplacer dans le cas où le mail a bien été envoyé lorsque l'on passera sur le serveur en ligne
-	//La demande étant possible on actualise la base de données comptenant les locations
-    		$req3 = $bdd ->prepare("INSERT INTO Locations(ID, Locataire, Debut, Fin, Caution, Prix) VALUES(:ID, :Locataire, :Debut, :Fin, :Caution, :Prix)");
-    		$req3 ->execute(array(
-    			'ID' => $donnees['ID'],
-    			'Locataire' => $_POST['Nom'] . " " . $_POST['Prenom'],
-    		'Debut' => $DateD,
-    		'Fin' => $DateF,
-    		'Caution' => $donnees['Caution'],
-    		'Prix' => $donnees['Prix']
-										));
-
-			}
-
-
-		}
-	else {
-		echo "<script>
-		alert('Veuillez choisir des dates valides');
-		</script>";
-	}	
-
-
-} 
-
- ?>
 
 	</body>
 
