@@ -65,12 +65,29 @@ fclose ($fp);
 
 
 <?php 
-
+//on actualise la panier si nécessaire
 if (isset($_POST['Date_Debut'], $_POST['Date_Fin']))
 {
 	$trans = array("/" => "-");
 	$DateD = strtr($_POST['Date_Debut'], $trans);
 	$DateF = strtr($_POST['Date_Fin'], $trans);
+	$test_formatD = True;
+	$test_formatF = True;
+	
+	
+	if(ctype_digit(substr($DateD, 0,3)))
+	{	
+		
+		$split = explode("-", $DateD);
+		$DateD = $split[2] . "-" . $split[1] . "-" . $split[0];
+	}
+	
+	if(ctype_digit(substr($DateF, 0,3)))
+	{
+		$split = explode("-", $DateF);
+		$DateF = $split[2] . "-" . $split[1] . "-" . $split[0];
+	}
+	
 	$_SESSION['Locations'][] = array($_GET['ID'],$DateD,$DateF);
 	echo '<script>
     		alert("L\'article a bien été ajouté au panier");

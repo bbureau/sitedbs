@@ -20,12 +20,10 @@
 	
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ">
-	 <li  class="nav-item ">
-		<a class="nav-link" href="../catalogue/catalogue.php">Catalogue</a>
-	  </li>
 	<div class="btn-group">
 	<button type="button" class="btn dropdown-toggle dropdown-toggle-split text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-    <span class="sr-only ">Toggle Dropdown</span>
+		<span>Catalogue</span>
+    	<span class="sr-only ">Toggle Dropdown</span>
 	</button>
       
       <li class="nav-item">
