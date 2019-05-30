@@ -139,9 +139,13 @@ CREATE TABLE IF NOT EXISTS `Events` (
 	`Visuel`	TEXT,
 	`Nom`	TEXT,
 	`Description`	TEXT,
-	`date`	INTEGER,
-	`prix`	REAL
+	`Date_Event`	TEXT,
+	`prix`	TEXT,
+	`Billeterie`	TEXT
 );
+INSERT INTO `Events` VALUES (NULL,'St-Velntinder',NULL,'14-02-2019',NULL,'https://www.facebook.com');
+INSERT INTO `Events` VALUES (NULL,'Anniversaire ',NULL,'23-11-2018',NULL,'https://www.youtube.com');
+INSERT INTO `Events` VALUES (NULL,'Nouvel an',NULL,'01-01-2019',NULL,'https://www.myecl.fr/home');
 CREATE TABLE IF NOT EXISTS `Correspack` (
 	`IDPack`	TEXT,
 	`ID`	TEXT,
