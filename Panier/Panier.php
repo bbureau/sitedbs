@@ -27,8 +27,15 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-//On affiche les différents articles
 
+if(isset($_GET['compteur']))
+{	
+	array_splice($_SESSION['Locations'], $_GET['compteur'], 1);
+}
+
+
+//On affiche les différents articles
+$compteur = 0;
 foreach($_SESSION['Locations'] as $Article)
 {
 	$req = $bdd->prepare('SELECT Nom, Marque, Caution, Etat, Quantite, Categorie, Disponible, Prix, ID FROM BaseDeDonnee WHERE ID = ? ');
@@ -52,9 +59,12 @@ $donnees = $req->fetch();
 	. 'Etat: ' . $donnees['Etat'] . '<br />'
 	. 'Caution: ' .$donnees['Caution'] . '€ <br />'
 	. 'Debut de location: ' .$Article['1'] . ' <br />'
-	. 'Fin de location: ' .$Article['2'] . '<br /> </div>' ;
+	. 'Fin de location: ' .$Article['2'] . '<br /> 
+	<form method = "post" action = "Panier.php?compteur='.$compteur.'">
+	<input type="submit" value="SUPPRIMER" />
+	</form></div>' ;
 
-
+$compteur = $compteur + 1;
 }
 
 	?>
