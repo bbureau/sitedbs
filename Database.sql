@@ -259,10 +259,10 @@ INSERT INTO `BaseDeDonnee` VALUES ('DTS Scena 300/500 MK2 PC Anti Halo','Scena',
 INSERT INTO `BaseDeDonnee` VALUES ('DTS Scena 650/1000 MK2 PC Anti Halo','Scena','135','1 ok 3 lampe HS','4','Lumieres','-','76','','LU12');
 INSERT INTO `BaseDeDonnee` VALUES ('Stairville B5R Beam Moving Head 5R','Stairville','998','ok','2','Lumieres','-','30','','LU13');
 INSERT INTO `BaseDeDonnee` VALUES ('Boitier Sunlite suite 2 Basic Class','Sunlite','429','ok','2','Lumieres','-','21','','LU14');
-INSERT INTO `BaseDeDonnee` VALUES ('Controleur DMX Starway CHAMAN','Starway','35','?','1','Lumieres','-','54','','LU15');
-INSERT INTO `BaseDeDonnee` VALUES ('Controleur DMX Starway CHEYEN','Starway','40','?','1','Lumieres','-','65','','LU16');
-INSERT INTO `BaseDeDonnee` VALUES ('Channel dispatching Starway TIWA','Starway','49','?','1','Lumieres','-','130','','LU17');
-INSERT INTO `BaseDeDonnee` VALUES ('Channels dimming console Starway CHEYEN','Starway','190','?','1','Lumieres','-','432','','LU18');
+INSERT INTO `BaseDeDonnee` VALUES ('Controleur DMX Starway CHAMAN','Starway','35','42','1','Lumieres','-','54','','LU15');
+INSERT INTO `BaseDeDonnee` VALUES ('Controleur DMX Starway CHEYEN','Starway','40','42','1','Lumieres','-','65','','LU16');
+INSERT INTO `BaseDeDonnee` VALUES ('Channel dispatching Starway TIWA','Starway','49','42','1','Lumieres','-','130','','LU17');
+INSERT INTO `BaseDeDonnee` VALUES ('Channels dimming console Starway CHEYEN','Starway','190','42','1','Lumieres','-','432','','LU18');
 INSERT INTO `BaseDeDonnee` VALUES ('Pied de levage (grand) Alu Tech ALT 450','Alu tech','','ok','2','Lumieres','-','300','','LU19');
 INSERT INTO `BaseDeDonnee` VALUES ('Pied de levage (petit) Mobil Tech 4aF Mini','Mobil tech','200','ok','2','Lumieres','-','200','','LU20');
 INSERT INTO `BaseDeDonnee` VALUES ('Pad AKAI APC 40','AKAI','299','ok','1','Lumieres','-','100','','LU21');
@@ -273,7 +273,7 @@ INSERT INTO `BaseDeDonnee` VALUES ('> 9m','','','','19','Cable','-','230','XLR',
 INSERT INTO `BaseDeDonnee` VALUES ('< 9m','','','','39','Cable','-','231','XLR','CA02');
 INSERT INTO `BaseDeDonnee` VALUES ('Petits','','','','7','Cable','-','310','XLR','CA03');
 INSERT INTO `BaseDeDonnee` VALUES ('DMX (sans compter rail)','','','','26','Cable','-','315','DMX','CA04');
-INSERT INTO `BaseDeDonnee` VALUES ('XLR male','','','','?','Cable','-','400','XLR-Jack','CA05');
+INSERT INTO `BaseDeDonnee` VALUES ('XLR male','','','','42','Cable','-','400','XLR-Jack','CA05');
 INSERT INTO `BaseDeDonnee` VALUES ('XLR femelle','','','','8','Cable','-','25','XLR-Jack','CA06');
 INSERT INTO `BaseDeDonnee` VALUES ('Jack','','','','14','Cable','-','100','XLR-Jack','CA07');
 INSERT INTO `BaseDeDonnee` VALUES ('Speakon','','','','14','Cable','-','125','Speakon','CA08');
