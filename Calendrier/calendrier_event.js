@@ -103,13 +103,13 @@ class Calendar
                         cell.classList.add('cell');
                         cell.textContent = i;
                         this.content.appendChild(cell);
-                        compteur_jour+=1
+                        compteur_jour+=1;
                         // Timestamp de la cellule
                         if(compteur_jour==7)
                         {
                             for (var k = 1; k <= 7; k++)
                             {
-                                let timestamp = new Date(date.getFullYear(), date.getMonth(), i - 7 + k).getTime();
+                                let timestamp = new Date(date.getFullYear(), date.getMonth(), i - 8 + k).getTime();
                         
                                 for(var j=0; j< this.evenement.length; j++)
                                      {   
@@ -117,7 +117,7 @@ class Calendar
                                         var Anneej = parseInt(datejt[2], 10);
                                         var Moisj = parseInt(datejt[1],10);
                                         var Jourj =parseInt(datejt[0],10);
-                                        var date_eventj = new Date(Anneej,Moisj-1,Jourj).getTime();
+                                        var date_eventj = new Date(Anneej,Moisj-1,Jourj-1).getTime();
 
                                         if(timestamp==date_eventj)
                                         {   let cell = document.createElement('span');
@@ -132,17 +132,17 @@ class Calendar
                                             this.content.appendChild(cell);  
                                          }
                                         else
-                                        {   let cell = document.createElement('span');
+                                        {   if(j==this.evenement.length-3)
+                                            {let cell = document.createElement('span');
                                             cell.classList.add('cell');
                                             cell.textContent = '';
-                                            
-                                            this.content.appendChild(cell);
+                                            this.content.appendChild(cell);}
                                         }
                                     j=j+2;
 
                                     }
                             }
-                        compteur_jour = 0  
+                        compteur_jour = 0;  
                          }
 
                          
