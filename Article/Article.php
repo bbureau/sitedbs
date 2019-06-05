@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<title> Article </title>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="Article.css">
 		<script src="../Calendrier_Dispo/jquery.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		
@@ -210,7 +211,67 @@ query = document.querySelectorAll("#Lumieres");
   </script>
 	</head>
 	<body>
-	  <?php // include("../Header/header.php"); ?>  <!-- inclus les liens visibles partout-->
+	  <?php session_start(); ?> <!-- Session pour utiliser des variables globales -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="../Header/header.css" />
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/handelgothic-tl-kirillica" type="text/css"/>
+
+<title>Hello world with Bootstrap</title>
+</HEAD>
+
+<nav class="navbar fixed-top navbar-expand-sm "style="background-color: #000137;">
+  <a class="navbar-brand" href="../accueil/accueil.php" id="image"><img  src="../Header/LogodBs.png" width="200" height="100" id="image"/></a>
+	
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ">
+	<div class="btn-group">
+	<button type="button" class="btn dropdown-toggle dropdown-toggle-split text-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		<span>Catalogue</span>
+    	<span class="sr-only ">Toggle Dropdown</span>
+	</button>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="../Contacts/contacts.php">Page de contacts</a>
+      </li>
+<!--      <li class="nav-item">
+        <a class="nav-link" href="../Mentions-legales/Mentions-legales.php">Mentions légales</a>
+      </li> -->
+	  <li class="nav-item">
+		<a class="nav-link" href="../Galerie/Galerie.php">Galerie</a>
+		</li>
+      <li class="nav-item">
+        <a class="nav-link " href="../Calendrier/Calendrier.php">Calendrier</a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link " href="../Panier/Panier.php">Panier</a>
+      </li>
+	   <!-- groupe de boutons -->
+	 
+	
+	<div class="dropdown-menu" id="catalogue">
+		<a class="dropdown-item" href="../Article/Article.php">Articles</a>
+		<a class="dropdown-item" href="../Pack/Pack.php">Packs</a>
+		<a class="dropdown-item" href="../Prestation/Prestation">Prestation</a>
+	</div>
+	</div>
+	
+		
+			
+		
+      
+    </ul>
+	
+  </div>
+ 
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</nav>
 
 	
 	
@@ -364,21 +425,22 @@ query = document.querySelectorAll("#Lumieres");
   }
     </script>
 <form>
-	<p>
+	<div class="Categ">
        Catégorie: <br />
-       <input type="checkbox" name="Micro" id="Micro" checked onchange="fonctionCategorie('Micro');" /> <label for="Micro">Micro</label><br />
+       <input type="checkbox" name="Micro" id="Micro" checked onchange="fonctionCategorie('Micro');" /> <label for="Micro">Micro</label>
        <!-- On appel dans le cas d'un changement de case la fonction définie auparavant -->
-       <input type="checkbox" name="Ampli" id="Ampli" checked onchange="fonctionCategorie('Ampli');"/> <label for="Ampli">Amplifiacteur</label><br />
-       <input type="checkbox" name="TableDeMixage" id="TableDeMixage" checked onchange="fonctionCategorie('TableDeMixage');"/> <label for="TableDeMixage">Table de mixage</label><br />
-       <input type="checkbox" name="Effects" id="Effects" checked onchange="fonctionCategorie('Effects');"/> <label for="Effects">Effects</label><br />
-       <input type="checkbox" name="Enceintes" id="Enceintes" checked onchange="fonctionCategorie('Enceintes');"/> <label for="Enceintes">Enceintes</label><br />
-       <input type="checkbox" name="Lumieres" id="Lumieres" checked onchange="fonctionCategorie('Lumieres');"/> <label for="Lumieres">Lumieres</label><br />
+       <input type="checkbox" name="Ampli" id="Ampli" checked onchange="fonctionCategorie('Ampli');"/> <label for="Ampli">Amplifiacteur</label>
+       <input type="checkbox" name="TableDeMixage" id="TableDeMixage" checked onchange="fonctionCategorie('TableDeMixage');"/> <label for="TableDeMixage">Table de mixage</label>
+       <input type="checkbox" name="Effects" id="Effects" checked onchange="fonctionCategorie('Effects');"/> <label for="Effects">Effects</label>
+       <input type="checkbox" name="Enceintes" id="Enceintes" checked onchange="fonctionCategorie('Enceintes');"/> <label for="Enceintes">Enceintes</label>
+       <input type="checkbox" name="Lumieres" id="Lumieres" checked onchange="fonctionCategorie('Lumieres');"/> <label for="Lumieres">Lumieres</label>
        <input type="checkbox" name="Cable" id="Cable" checked onchange="fonctionCategorie('Cable');"/> <label for="Cable">Cables</label><br />
        
-   </p>
+   </div>
 </form>
-<div id="affichage_prix">0€ - 500€</div>
-<div id ="slider-range"></div>
+<div class="Prix">
+Prix :<div id="affichage_prix">0€ - 500€</div>
+<div id ="slider-range"></div></div>
 <?php
 $donnees = $reponse->fetch();
 // Mise en place de variable retenant les prix des articles pour l'option de trix par prix
@@ -404,7 +466,7 @@ Prix_".$donnees['Categorie'].".push(".$donnees['Prix'].");
 
 // on affiche le nom du produit, le nom est un lien vesr la page décrivant le produit
 // onmouseover et onmouseout permettent d'afficher une bulle d'information au passage de la souris 
-	echo '<div id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '" onmouseover = montre(\''.$donnees['Prix'].'€\');
+	echo '<div class = "Article" id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '" onmouseover = montre(\''.$donnees['Prix'].'€\');
 	 onmouseout=cache(); >' . $donnees['Nom'] . '</a> <br />';
 	// on affiche l'image correspondante 
 	echo '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" onmouseover = "montre(\''.$donnees['Prix'].'€\');"
