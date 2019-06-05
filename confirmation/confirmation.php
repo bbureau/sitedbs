@@ -37,12 +37,12 @@ catch(Exception $e)
 		$header .= "Reply-to: \"" . $_POST['Prenom'] ." " . $_POST['Nom'] ."\"<". $_POST['Mail']. ">";
 	  	if(mail($to,$subject,$message, $headers)) 
     	{echo " <script> 
-    	alert('L\'email a été envoyé !'');
+    	alert('L\'email a été envoyé !');
     	</script>";}
  
     	else {
     			echo "<script>
-    			alert('L'email n'a pas été envoyé);
+    			alert('L\'email n\'a pas été envoyé');
     			</script><a href='../Panier/Panier.php'>Retour au Panier</a>";
 	//ATTENTION: la suite de ce code sera à déplacer dans le cas où le mail a bien été envoyé lorsque l'on passera sur le serveur en ligne
 	//La demande étant possible on actualise la base de données comptenant les locations
