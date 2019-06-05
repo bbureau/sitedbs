@@ -1,0 +1,17 @@
+.Article
+{	margin-right: 5%;
+	margin-left: 5%;
+	display: inline-block;
+	font-family: Helvetiva Neue;
+	text-align: center;
+}
+.Categ
+{	margin-left: 5%;
+	font-family: Helvetiva Neue;
+	margin-top: 140px;
+}
+.Prix
+{	margin-left: 5%;
+	width: 40%;
+	font-family: Helvetiva Neue;
+}

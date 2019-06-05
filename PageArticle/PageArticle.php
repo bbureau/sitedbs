@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<title> PageArticle </title>
 		<link id ="css" rel="stylesheet" media="screen, print, handheld" type="text/css" href="../Calendrier_Dispo/calendrier_dispo.css" />
+		<link id ="css" rel="stylesheet" media="screen, print, handheld" type="text/css" href="PageArticle.css" />
     <script src="../Calendrier_Dispo/jquery.js"></script>
     <script type="text/javascript" src="../Calendrier_Dispo/calendrier_dispo.js"></script>
 	</head>
@@ -35,7 +36,7 @@ $donnees = $req->fetch();
 	$dossier = strtr($donnees['ID'],$trans);
 	
 // 2)on affiche le nom du produit 
-	echo $donnees['Nom'] .  '<br />' 
+	echo '<div class = "Conteneur"><div class = "Caracteristiques">' . $donnees['Nom'] .  '<br />' 
 	//3) Sn image
 	. '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' 
  //height et width définisse une taille standard pour les images
@@ -44,12 +45,12 @@ $donnees = $req->fetch();
 	. 'Categorie: ' . $donnees['Categorie'] . '<br />'
 	. 'Marque :' . $donnees['Marque'] . '<br />'
 	. 'Etat: ' . $donnees['Etat'] . '<br />'
-	. 'Caution: ' .$donnees['Caution'] . '€ <br />' ;
+	. 'Caution: ' .$donnees['Caution'] . '€ <br /></div>' ;
 
 ?>
 
 <!-- récupérons le fichier txt associé -->
-<?php
+<?php echo '<div class="Texte">';
 $fp = fopen ('../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.txt', "r");
 while (!feof($fp))
 	{
@@ -61,6 +62,7 @@ while (!feof($fp))
 	/*On ferme le fichier*/
 
 fclose ($fp);
+echo '</div></div>';
 ?>
 
 
@@ -144,16 +146,17 @@ $req->closeCursor();
 
 ?>
 
+<div class='Conteneur'>
 <div id="calendar" class="calendar"><script>new Calendar('#calendar', Loca, nb_dispo);</script></div>
 <!--  Maintenant passons au formulaire de réservation -->
-
+<div class = "Formulaire">
 <?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .'">' ?>
-<label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/>
-<label for= "Date_Fin"> Date de fin de réservation </label> : <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/>
-<input type="submit" value="AJOUTER AU PANIER" />
+<label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/></br>
+<label for= "Date_Fin"> Date de fin de réservation </label> : &nbsp;&nbsp;&nbsp;&nbsp;   <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/></br>
+<input type="submit" class="AjoutPanier" value="AJOUTER AU PANIER" />
 </form>
-
-
+</div>
+</div>
 
 	</body>
 

@@ -37,7 +37,7 @@
 
 .calendar .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -63,7 +63,7 @@
 
 .calendar button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar button:first-child
@@ -95,12 +95,12 @@
 
 .calendar .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar .indispo
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
