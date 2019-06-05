@@ -113,13 +113,13 @@ $req->closeCursor();
 
 	// Ajoutons maintenant un formulaire de réservation
 
-	echo '<form class="Formulaire" method = "post" action = "Pack.php?ID_Pack='. $info_pack['IDPack'] .'">
+	echo '<div class="Formulaire"><form method = "post" action = "Pack.php?ID_Pack='. $info_pack['IDPack'] .'">
 <label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/>
 <label for= "Date_Fin"> Date de fin de réservation </label> : <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/>
 <input type="submit" class="AjoutPanier" value="AJOUTER AU PANIER" />
 	</form>';
 
-	echo '</div></div>';
+	echo '</div></div></div>';
 
 	}
 

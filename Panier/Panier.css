@@ -1,0 +1,28 @@
+
+
+.bouton
+{
+	font-family: Helvetiva Neue;
+	background-color: #c0c1ff;
+	
+}
+.Conteneur
+{	margin-top: 140px;
+	margin-left: 5%;
+	font-family: Helvetiva Neue;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.article
+{
+	margin-left: 10px
+}
+.Formulaire
+{
+	margin-top: 40px;
+	margin-left: 5%;
+	font-family: Helvetiva Neue;
+	
+
+}

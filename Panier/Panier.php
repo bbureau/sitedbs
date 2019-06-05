@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title> Panier </title>
+		<link id ="css" rel="stylesheet" media="screen, print, handheld" type="text/css" href="Panier.css" />
 	</head>
 	<body>
 	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
@@ -32,7 +33,7 @@ if(isset($_GET['compteur']))
 {	
 	array_splice($_SESSION['Locations'], $_GET['compteur'], 1);
 }
-
+echo "<div class='Conteneur'>";
 
 //On affiche les différents articles
 $compteur = 0;
@@ -48,7 +49,7 @@ $donnees = $req->fetch();
 	$dossier = strtr($donnees['ID'],$trans);
 	
 // 2)on affiche le nom du produit 
-	echo '<div> '. $donnees['Nom'] .  '<br />' 
+	echo '<div classe="article"> '. $donnees['Nom'] .  '<br />' 
 	//3) Sn image
 	. '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' 
  //height et width définisse une taille standard pour les images
@@ -61,20 +62,22 @@ $donnees = $req->fetch();
 	. 'Debut de location: ' .$Article['1'] . ' <br />'
 	. 'Fin de location: ' .$Article['2'] . '<br /> 
 	<form method = "post" action = "Panier.php?compteur='.$compteur.'">
-	<input type="submit" value="SUPPRIMER" />
+	<input type="submit" class="bouton" value="SUPPRIMER" />
 	</form></div>' ;
 
 $compteur = $compteur + 1;
 }
 
 	?>
+</div>
+<div class="Formulaire">
 <form method = "post" action = "../confirmation/confirmation.php">
 <label for= "Nom"> Nom </label> : <input type = "text" name="Nom" id = "Nom" required/>
 <label for= "Prenom"> Prénom </label> : <input type = "text" name="Prenom" id = "Prenom" required />
 <label for= "Mail"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
-<input type="submit" value="RESERVER" />
+<input type="submit" class = "bouton" value="RESERVER" />
 </form>
-
+</div>
 	
 	</body>
 </html>
