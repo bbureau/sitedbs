@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="../Header/header.css" />
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/handelgothic-tl-kirillica" type="text/css"/>
 
-<title>Hello world with Bootstrap</title>
+<title>Header</title>
 </HEAD>
 
 <nav class="navbar fixed-top navbar-expand-sm "style="background-color: #000137;">

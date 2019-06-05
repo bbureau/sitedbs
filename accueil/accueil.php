@@ -27,7 +27,7 @@
 				
 				
                     <a href="../Contacts/contacts.php">
-                        <button type="button" class="btn btn-light bouton" id="bouton2">Page de contact</button>
+                        <button type="button" class="btn btn-light bouton" id="bouton2">Contacts</button>
 
                     </a>
                 </p>
