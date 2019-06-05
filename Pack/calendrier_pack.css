@@ -37,7 +37,7 @@
 
 .calendar1 .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -63,7 +63,7 @@
 
 .calendar1 button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar1 button:first-child
@@ -95,13 +95,13 @@
 
 .calendar1 .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar1 .indispo
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
@@ -123,7 +123,7 @@
 
 .calendar2 .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -149,7 +149,7 @@
 
 .calendar2 button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar2 button:first-child
@@ -181,13 +181,13 @@
 
 .calendar2 .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar2 .indispo
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
@@ -207,7 +207,7 @@
 
 .calendar3 .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -233,7 +233,7 @@
 
 .calendar3 button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar3 button:first-child
@@ -265,13 +265,13 @@
 
 .calendar3 .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar3 .indispo
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
@@ -291,7 +291,7 @@
 
 .calendar4 .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -317,7 +317,7 @@
 
 .calendar4 button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar4 button:first-child
@@ -349,13 +349,13 @@
 
 .calendar4 .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar4 .indispo
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
@@ -374,7 +374,7 @@
 
 .calendar5 .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -400,7 +400,7 @@
 
 .calendar5 button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar5 button:first-child
@@ -432,12 +432,12 @@
 
 .calendar5 .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar5 .indispo
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
