@@ -23,14 +23,7 @@ catch(Exception $e)
 }
 ?>
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+
 <!-- Récupérons les infos sur locations -->
 
 <?php
@@ -111,22 +104,22 @@ $req->closeCursor();
  //height et width définisse une taille standard pour les images
 
 		}
-// Ajoutons maintenant un formulaire de réservation	
+	
 	echo '</br>';
 
 //Ajoutons le calendrier de disponibilitées
 	
-	echo '<div id="calendar'.$info_pack['IDPack'].'" class="calendar'.$info_pack['IDPack'].'"><script>new Calendar(\'#calendar'.$info_pack['IDPack'].'\', compo_pack, Loca);</script></div>';
+	echo '<div class="Conteneur"><div id="calendar'.$info_pack['IDPack'].'" class="calendar'.$info_pack['IDPack'].'"><script>new Calendar(\'#calendar'.$info_pack['IDPack'].'\', compo_pack, Loca);</script></div>';
 
 	// Ajoutons maintenant un formulaire de réservation
 
-	echo '<form method = "post" action = "Pack.php?ID_Pack='. $info_pack['IDPack'] .'">
+	echo '<form class="Formulaire" method = "post" action = "Pack.php?ID_Pack='. $info_pack['IDPack'] .'">
 <label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/>
 <label for= "Date_Fin"> Date de fin de réservation </label> : <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/>
-<input type="submit" value="AJOUTER AU PANIER" />
+<input type="submit" class="AjoutPanier" value="AJOUTER AU PANIER" />
 	</form>';
 
-	echo '</div>';
+	echo '</div></div>';
 
 	}
 

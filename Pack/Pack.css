@@ -1,4 +1,30 @@
+body
+{	margin-top: 140px;
+	margin-left: 5%;
+	font-family: Helvetiva Neue;
+}
+
 .articlePack
 {
 	display: inline-block;
+}
+
+.Conteneur
+{
+	display: flex;
+	
+}
+.Formulaire
+{
+	margin-top: 120px;
+	margin-right: 5%;
+	margin-left: 5%;
+	text-align: justify;
+	font-family: Helvetiva Neue;
+}
+.AjoutPanier
+{
+	font-family: Helvetiva Neue;
+	background-color: #c0c1ff;
+	
 }
