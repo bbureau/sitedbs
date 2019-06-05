@@ -12,7 +12,11 @@
 	</head>
 
 	<body>
-	<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
+        <div id="main">
+        <header>
+	       <?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
+        </header>
+
 	
     <div class="hovereffect" id="fond">
         <img class="img-responsive" src="../Header/fete2.jpg" alt="">
@@ -47,7 +51,9 @@
                 </p>
             </div>
     </div>
-	
+    </div>
 
-	</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
 </html>

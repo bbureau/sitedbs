@@ -11,77 +11,66 @@
 	</head>
 	<body>
 
-	<<?php include("../Header/header.php"); ?> <!-- inclus les liens visibles partout-->
-<!-- Grid row -->
-<div class="row">
-
-  <!-- Grid column -->
-  <div class="col-md-12 d-flex justify-content-center mb-5">
-
-    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
-    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
-
- </div>
- 
-<!-- Grid row -->
-<div class="gallery" id="gallery">
-
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 2">
-    <img class="img-fluid" src="dj.jpg" alt="Card image cap">
+<header>
+  <?php include("../Header/header.php"); ?>
+<!-- inclus les liens visibles partout-->
+<!--
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="../Photos_events/Challenge/1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="../Photos_events/Challenge/2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="../Photos_events/Challenge/3.jpg" alt="Third slide">
+    </div>
   </div>
-  <!-- Grid column -->
-
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 1">
-    <img class="img-fluid" src="dj1.jpg" alt="Card image cap">
-  </div>
-  <!-- Grid column -->
-
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 1">
-    <img class="img-fluid" src="dj2.jpg" alt="Card image cap">
-  </div>
-  <!-- Grid column -->
-
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 2">
-    <img class="img-fluid" src="dj3.jpg" alt="Card image cap">
-  </div>
-  <!-- Grid column -->
-<div class="mb-3 pics animation all 2">
-    	<img class="img-fluid" src="party.jpg" alt="Card image cap">
-  	</div>
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 2">
-    <img class="img-fluid" src="party.jpg" alt="Card image cap">
-  </div>
-  <!-- Grid column -->
-	<div class="mb-3 pics animation all 2">
-    	<img class="img-fluid" src="party.jpg" alt="Card image cap">
-  	</div>
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 1">
-    <img class="img-fluid" src="party2.jpg" alt="Card image cap">
-  </div>
-  <!-- Grid column -->
-  <div class="mb-3 pics animation all 2">
-    	<img class="img-fluid" src="party.jpg" alt="Card image cap">
-  	</div>
-
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<!-- Grid row --> 
 
-		
-	
-	
-	
-	
+	-->
+  
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+        alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg"
+        alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
+        alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 	
 	</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<footer>
-		<?php include("../footer/footer.php"); ?>
-	</footer>
 </html>
