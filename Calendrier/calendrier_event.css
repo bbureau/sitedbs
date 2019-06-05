@@ -21,7 +21,7 @@
 }
 
 .calendar
-{
+{ margin-left: 5%;
   background:#fff;
   border-radius:4px;
   color:#222629;
@@ -38,7 +38,7 @@
 
 .calendar .header
 {
-  background:#ddd;
+  background:#c0c1ff;
   height:40px;
   line-height:40px;
   text-align:center;
@@ -64,7 +64,7 @@
 
 .calendar button:hover
 {
-  color:#009FB7;
+  color:#000137;
 }
 
 .calendar button:first-child
@@ -96,12 +96,12 @@
 
 .calendar .day
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
 
 .calendar .Evenement
 {
-  background:#009FB7;
+  background:#000137;
   color:#fff;
 }
