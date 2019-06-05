@@ -1,0 +1,443 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+{
+  box-sizing:border-box;
+}
+
+#body
+{
+  align-items:flex-start;
+  background:#22262b;
+  color:#fff;
+  display:flex;
+  font-family:'Poppins';
+  font-size:16px;
+  height:100vh;
+  justify-content:center;
+  margin:0;
+  padding:0;
+}
+
+.calendar1
+{
+  background:#fff;
+  border-radius:4px;
+  color:#222629;
+  overflow:hidden;
+  margin-top:20px;
+  max-width:400px;
+}
+
+#button
+{
+  border:none;
+}
+
+.calendar1 .header
+{
+  background:#ddd;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+
+.calendar1 .month
+{
+  display:inline-block;
+  font-weight:bold;
+}
+
+.calendar1 button
+{
+  background:none;
+  color:inherit;
+  cursor:pointer;
+  font-family:Consolas;
+  font-size:23px;
+  font-weight:bold;
+  height:100%;
+  padding:0 15px;
+}
+
+.calendar1 button:hover
+{
+  color:#009FB7;
+}
+
+.calendar1 button:first-child
+{
+  float:left;
+}
+
+.calendar1 button:last-child
+{
+  float:right;
+}
+
+.calendar1 .cell
+{
+  background:#fff;
+  color:#5d5d5d;
+  box-sizing:border-box;
+  display:inline-block;
+  padding:10px 0;
+  text-align:center;
+  width:calc(100% / 7);
+}
+
+.calendar1 .day
+{
+  font-size:.8rem;
+  padding:8px 0;
+}
+
+.calendar1 .day
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+.calendar1 .indispo
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+
+
+/* second pack */
+
+.calendar2
+{
+  background:#fff;
+  border-radius:4px;
+  color:#222629;
+  overflow:hidden;
+  margin-top:20px;
+  max-width:400px;
+}
+
+
+
+.calendar2 .header
+{
+  background:#ddd;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+
+.calendar2 .month
+{
+  display:inline-block;
+  font-weight:bold;
+}
+
+.calendar2 button
+{
+  background:none;
+  color:inherit;
+  cursor:pointer;
+  font-family:Consolas;
+  font-size:23px;
+  font-weight:bold;
+  height:100%;
+  padding:0 15px;
+}
+
+.calendar2 button:hover
+{
+  color:#009FB7;
+}
+
+.calendar2 button:first-child
+{
+  float:left;
+}
+
+.calendar2 button:last-child
+{
+  float:right;
+}
+
+.calendar2 .cell
+{
+  background:#fff;
+  color:#5d5d5d;
+  box-sizing:border-box;
+  display:inline-block;
+  padding:10px 0;
+  text-align:center;
+  width:calc(100% / 7);
+}
+
+.calendar2 .day
+{
+  font-size:.8rem;
+  padding:8px 0;
+}
+
+.calendar2 .day
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+.calendar2 .indispo
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+/* calendrier 3*/
+
+.calendar3
+{
+  background:#fff;
+  border-radius:4px;
+  color:#222629;
+  overflow:hidden;
+  margin-top:20px;
+  max-width:400px;
+}
+
+
+
+.calendar3 .header
+{
+  background:#ddd;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+
+.calendar3 .month
+{
+  display:inline-block;
+  font-weight:bold;
+}
+
+.calendar3 button
+{
+  background:none;
+  color:inherit;
+  cursor:pointer;
+  font-family:Consolas;
+  font-size:23px;
+  font-weight:bold;
+  height:100%;
+  padding:0 15px;
+}
+
+.calendar3 button:hover
+{
+  color:#009FB7;
+}
+
+.calendar3 button:first-child
+{
+  float:left;
+}
+
+.calendar3 button:last-child
+{
+  float:right;
+}
+
+.calendar3 .cell
+{
+  background:#fff;
+  color:#5d5d5d;
+  box-sizing:border-box;
+  display:inline-block;
+  padding:10px 0;
+  text-align:center;
+  width:calc(100% / 7);
+}
+
+.calendar3 .day
+{
+  font-size:.8rem;
+  padding:8px 0;
+}
+
+.calendar3 .day
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+.calendar3 .indispo
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+/*calendrier 4*/
+
+.calendar4
+{
+  background:#fff;
+  border-radius:4px;
+  color:#222629;
+  overflow:hidden;
+  margin-top:20px;
+  max-width:400px;
+}
+
+
+
+.calendar4 .header
+{
+  background:#ddd;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+
+.calendar4 .month
+{
+  display:inline-block;
+  font-weight:bold;
+}
+
+.calendar4 button
+{
+  background:none;
+  color:inherit;
+  cursor:pointer;
+  font-family:Consolas;
+  font-size:23px;
+  font-weight:bold;
+  height:100%;
+  padding:0 15px;
+}
+
+.calendar4 button:hover
+{
+  color:#009FB7;
+}
+
+.calendar4 button:first-child
+{
+  float:left;
+}
+
+.calendar4 button:last-child
+{
+  float:right;
+}
+
+.calendar4 .cell
+{
+  background:#fff;
+  color:#5d5d5d;
+  box-sizing:border-box;
+  display:inline-block;
+  padding:10px 0;
+  text-align:center;
+  width:calc(100% / 7);
+}
+
+.calendar4 .day
+{
+  font-size:.8rem;
+  padding:8px 0;
+}
+
+.calendar4 .day
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+.calendar4 .indispo
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+/*calendrier 5*/
+.calendar5
+{
+  background:#fff;
+  border-radius:4px;
+  color:#222629;
+  overflow:hidden;
+  margin-top:20px;
+  max-width:400px;
+}
+
+
+
+.calendar5 .header
+{
+  background:#ddd;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+}
+
+.calendar5 .month
+{
+  display:inline-block;
+  font-weight:bold;
+}
+
+.calendar5 button
+{
+  background:none;
+  color:inherit;
+  cursor:pointer;
+  font-family:Consolas;
+  font-size:23px;
+  font-weight:bold;
+  height:100%;
+  padding:0 15px;
+}
+
+.calendar5 button:hover
+{
+  color:#009FB7;
+}
+
+.calendar5 button:first-child
+{
+  float:left;
+}
+
+.calendar5 button:last-child
+{
+  float:right;
+}
+
+.calendar5 .cell
+{
+  background:#fff;
+  color:#5d5d5d;
+  box-sizing:border-box;
+  display:inline-block;
+  padding:10px 0;
+  text-align:center;
+  width:calc(100% / 7);
+}
+
+.calendar5 .day
+{
+  font-size:.8rem;
+  padding:8px 0;
+}
+
+.calendar5 .day
+{
+  background:#009FB7;
+  color:#fff;
+}
+
+.calendar5 .indispo
+{
+  background:#009FB7;
+  color:#fff;
+}

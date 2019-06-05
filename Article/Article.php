@@ -8,6 +8,58 @@
 		<script src="../Calendrier_Dispo/jquery.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		
+
+
+<!-- Une fonction utile permettant de créer des bulles -->
+
+<link rel="stylesheet" href="bulle.css">
+
+<script>
+function GetId(id)
+{
+return document.getElementById(id);
+}
+var i=false; // La variable i nous dit si la bulle est visible ou non
+ 
+function move(e) {
+  if(i) {  // Si la bulle est visible, on calcul en temps reel sa position ideale
+    if (navigator.appName!="Microsoft Internet Explorer") { // Si on est pas sous IE
+    GetId("curseur").style.left=e.pageX + 5+"px";
+    GetId("curseur").style.top=e.pageY + 10+"px";
+    }
+    else { // Modif proposé par TeDeum, merci à  lui
+    if(document.documentElement.clientWidth>0) {
+GetId("curseur").style.left=20+event.x+document.documentElement.scrollLeft+"px";
+GetId("curseur").style.top=10+event.y+document.documentElement.scrollTop+"px";
+    } else {
+GetId("curseur").style.left=20+event.x+document.body.scrollLeft+"px";
+GetId("curseur").style.top=10+event.y+document.body.scrollTop+"px";
+         }
+    }
+  }
+}
+ 
+function montre(text) {
+  if(i==false) {
+  GetId("curseur").style.visibility="visible"; // Si il est cacher (la verif n'est qu'une securité) on le rend visible.
+  GetId("curseur").innerHTML = text; // on copie notre texte dans l'élément html
+  i=true;
+  }
+}
+function cache() {
+if(i==true) {
+GetId("curseur").style.visibility="hidden"; // Si la bulle est visible on la cache
+i=false;
+}
+}
+document.onmousemove=move; // dès que la souris bouge, on appelle la fonction move pour mettre à jour la position de la bulle.
+//-->
+</script>
+
+
+<div id="curseur" class="infobulle"></div>
+
+
 <!-- Fonction définissant le slider-->
 
 		<script>
@@ -329,6 +381,7 @@ query = document.querySelectorAll("#Lumieres");
 <div id ="slider-range"></div>
 <?php
 $donnees = $reponse->fetch();
+// Mise en place de variable retenant les prix des articles pour l'option de trix par prix
 echo "<script>var Prix_Micro = [];
 var Prix_Ampli = [];
 var Prix_TableDeMixage = [];
@@ -350,9 +403,12 @@ Prix_".$donnees['Categorie'].".push(".$donnees['Prix'].");
 	</script>";
 
 // on affiche le nom du produit, le nom est un lien vesr la page décrivant le produit
-	echo '<div id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '">' . $donnees['Nom'] . '</a> <br />';
+// onmouseover et onmouseout permettent d'afficher une bulle d'information au passage de la souris 
+	echo '<div id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '" onmouseover = montre(\''.$donnees['Prix'].'€\');
+	 onmouseout=cache(); >' . $donnees['Nom'] . '</a> <br />';
 	// on affiche l'image correspondante 
-	echo '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" />  </div>' ;
+	echo '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" onmouseover = "montre(\''.$donnees['Prix'].'€\');"
+	 onmouseout="cache()";/>  </div>' ;
 //height et width définisse une taille standard pour les images
 
 
