@@ -1,7 +1,7 @@
--R&eacute;ponse en fr&eacute;quence optimis&eacute;e pour la voix, avec des mediums clairs et une att&eacute;nuation des graves afin d'&eacute;viter l'effet de proximit&eacute;.</br>
-Directivit&eacute; supercardio&iuml;de uniforme pour un gain &eacute;lev&eacute; avant larsen et un excellent rejets des sons hors axe.</br>
-Aimant en N&eacute;odymium pour un rapport signal/bruit &eacute;lev&eacute;.</br>
-Grille en acier tremp&eacute; r&eacute;sistante &agrave; l'usure et aux mauvais traitements.</br>
-Syst&egrave;me anti-chocs pneumatique avanc&eacute; r&eacute;duisant la transmission des bruits m&eacute;caniques et des vibrations.</br>
-Faible sensibilit&eacute; aux changements d'imp&eacute;dance de charge.</br>
-Qualit&eacute; l&eacute;gendaire et fiabilit&eacute; de Shure</br>
+-	R&eacute;ponse en fr&eacute;quence optimis&eacute;e pour la voix, avec des mediums clairs et une att&eacute;nuation des graves afin d'&eacute;viter l'effet de proximit&eacute;.</br>
+-	Directivit&eacute; supercardio&iuml;de uniforme pour un gain &eacute;lev&eacute; avant larsen et un excellent rejets des sons hors axe.</br>
+-	Aimant en N&eacute;odymium pour un rapport signal/bruit &eacute;lev&eacute;.</br>
+-	Grille en acier tremp&eacute; r&eacute;sistante &agrave; l'usure et aux mauvais traitements.</br>
+-	Syst&egrave;me anti-chocs pneumatique avanc&eacute; r&eacute;duisant la transmission des bruits m&eacute;caniques et des vibrations.</br>
+-	Faible sensibilit&eacute; aux changements d'imp&eacute;dance de charge.</br>
+-	Qualit&eacute; l&eacute;gendaire et fiabilit&eacute; de Shure</br>
