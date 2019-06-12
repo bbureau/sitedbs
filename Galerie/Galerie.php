@@ -60,16 +60,24 @@ $(".left").click(function(){
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+      <img class="d-block w-100" src="BE.jpg"
         alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg"
+      <img class="d-block w-100" src="Challenge.jpg"
         alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
+      <img class="d-block w-100" src="STV.jpg"
         alt="Third slide">
+    </div>
+	<div class="carousel-item">
+      <img class="d-block w-100" src="D2A.jpg"
+        alt="Fourth slide">
+    </div>
+	<div class="carousel-item">
+      <img class="d-block w-100" src="D3A.jpg"
+        alt="Fifth slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
