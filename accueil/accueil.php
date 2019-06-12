@@ -21,7 +21,7 @@
     <div class="hovereffect" id="fond">
         <img class="img-responsive" src="../Header/fete2.jpg" alt="">
             <div class="overlay">
-                <h2 id="titre">"La vie sans musique est tout simplement une erreur, une fatigue, un exil." Nietsche</h2>
+                <h2 id="titre">Décibels</h2>
                 <p class="set1">
 
                    
