@@ -47,15 +47,15 @@
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+      <img class="d-block w-100" src=".../Photos_Events/Brunch Electronique/6.jpg"
         alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg"
+      <img class="d-block w-100" src=".../Photos_Events/Challenge/3.jpg"
         alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
+      <img class="d-block w-100" src=".../Photos_Events/Départ 2A/8.jpg"
         alt="Third slide">
     </div>
   </div>
