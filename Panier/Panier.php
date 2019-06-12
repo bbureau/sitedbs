@@ -49,7 +49,7 @@ $donnees = $req->fetch();
 	$dossier = strtr($donnees['ID'],$trans);
 	
 // 2)on affiche le nom du produit 
-	echo '<div classe="article"> '. $donnees['Nom'] .  '<br />' 
+	echo '<div classe="article" style="font-family:Helvetica"> '. $donnees['Nom'] .  '<br />' 
 	//3) Sn image
 	. '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' 
  //height et width définisse une taille standard pour les images

@@ -1,7 +1,7 @@
 body
 {	margin-top: 140px;
 	margin-left: 5%;
-	font-family: Helvetiva Neue;
+	font-family: Helvetica;
 }
 
 .articlePack
@@ -20,11 +20,11 @@ body
 	margin-right: 5%;
 	margin-left: 5%;
 	text-align: justify;
-	font-family: Helvetiva Neue;
+	font-family: Helvetica;
 }
 .AjoutPanier
 {
-	font-family: Helvetiva Neue;
+	font-family: Helvetica;
 	background-color: #c0c1ff;
 	
 }
