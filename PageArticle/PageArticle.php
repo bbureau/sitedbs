@@ -36,7 +36,7 @@ $donnees = $req->fetch();
 	$dossier = strtr($donnees['ID'],$trans);
 	
 // 2)on affiche le nom du produit 
-	echo '<div class = "Conteneur"><div class = "Caracteristiques" style = "font-family:Helvetica">' . $donnees['Nom'] .  '<br />' 
+	echo '<div id = "Conteneur"><div class = "Caracteristiques">' . $donnees['Nom'] .  '<br />' 
 	//3) Sn image
 	. '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" /> <br />' 
  //height et width définisse une taille standard pour les images
@@ -50,7 +50,7 @@ $donnees = $req->fetch();
 ?>
 
 <!-- récupérons le fichier txt associé -->
-<?php echo '<div class="Texte" style="font-family:Helvetica">';
+<?php echo '<div class="Texte">';
 $fp = fopen ('../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' . $donnees['ID'] . '.txt', "r");
 while (!feof($fp))
 	{
@@ -150,7 +150,7 @@ $req->closeCursor();
 <div id="calendar" class="calendar"><script>new Calendar('#calendar', Loca, nb_dispo);</script></div>
 <!--  Maintenant passons au formulaire de réservation -->
 <div class = "Formulaire">
-<?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .'" style="font-family:Helvetica">' ?>
+<?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .' style="font-family:Helvetica">' ?>
 <label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/></br>
 <label for= "Date_Fin"> Date de fin de réservation </label> : &nbsp;&nbsp;&nbsp;&nbsp;   <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/></br>
 <input type="submit" class="AjoutPanier" value="AJOUTER AU PANIER" />
