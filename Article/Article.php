@@ -425,7 +425,7 @@ query = document.querySelectorAll("#Lumieres");
   }
     </script>
 <form>
-	<div class="Categ">
+	<div class="Categ" style="font-family : Helvetica">
        Catégorie: <br />
        <input type="checkbox" name="Micro" id="Micro" checked onchange="fonctionCategorie('Micro');" /> <label for="Micro">Micro</label>
        <!-- On appel dans le cas d'un changement de case la fonction définie auparavant -->
@@ -438,9 +438,11 @@ query = document.querySelectorAll("#Lumieres");
        
    </div>
 </form>
-<div class="Prix">
+<div class="Prix" style="font-family: Helvetica">
 Prix :<div id="affichage_prix">0€ - 500€</div>
 <div id ="slider-range"></div></div>
+</br>
+</br>
 <?php
 $donnees = $reponse->fetch();
 // Mise en place de variable retenant les prix des articles pour l'option de trix par prix
@@ -466,7 +468,7 @@ Prix_".$donnees['Categorie'].".push(".$donnees['Prix'].");
 
 // on affiche le nom du produit, le nom est un lien vesr la page décrivant le produit
 // onmouseover et onmouseout permettent d'afficher une bulle d'information au passage de la souris 
-	echo '<div class = "Article" id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '" onmouseover = montre(\''.$donnees['Prix'].'€\');
+	echo '<div class = "Article" style="font-family:Helvetica" id ="' . $donnees['Categorie'] . '"><a href="../PageArticle/PageArticle.php?ID=' . $donnees['ID'] . '" onmouseover = montre(\''.$donnees['Prix'].'€\');
 	 onmouseout=cache(); >' . $donnees['Nom'] . '</a> <br />';
 	// on affiche l'image correspondante 
 	echo '<img src ="../ressources/Materiel/' . $dossier . '/' .$donnees['ID'] . '/' .$donnees['ID'] . '.jpeg" height="120" width="120" alt = "Image du produit: ' . $donnees['Nom'] . '" onmouseover = "montre(\''.$donnees['Prix'].'€\');"

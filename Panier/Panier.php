@@ -72,10 +72,10 @@ $compteur = $compteur + 1;
 </div>
 <div class="Formulaire">
 <form method = "post" action = "../confirmation/confirmation.php">
-<label for= "Nom"> Nom </label> : <input type = "text" name="Nom" id = "Nom" required/>
-<label for= "Prenom"> Prénom </label> : <input type = "text" name="Prenom" id = "Prenom" required />
-<label for= "Mail"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
-<input type="submit" class = "bouton" value="RESERVER" />
+<label for= "Nom" style="font-family:Helvetica"> Nom </label> : <input type = "text" name="Nom" id = "Nom" required/>
+<label for= "Prenom" style="font-family:Helvetica"> Prénom </label> : <input type = "text" name="Prenom" id = "Prenom" required />
+<label for= "Mail" style="font-family:Helvetica"> Email </label> : <input type = "email" name="Mail" id = "Mail" required/>
+<input type="submit" style="font-family:Helvetica" class = "bouton" value="RESERVER" />
 </form>
 </div>
 	
