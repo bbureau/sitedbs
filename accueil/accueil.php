@@ -25,8 +25,8 @@
                 <p class="set1">
 
                    
-                    <a href="../catalogue/catalogue.php">
-                        <button type="button" class="btn btn-light bouton" id="bouton1">Catalogue/Location</button>
+                    <a href="../Article/Article.php">
+                        <button type="button" class="btn btn-light bouton" id="bouton1">Catalogue</button>
                     </a>
 				
 				
