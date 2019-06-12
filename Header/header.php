@@ -14,7 +14,7 @@
 
 <title>Header</title>
 </HEAD>
-
+<?php session_start(); ?>
 <nav class="navbar fixed-top navbar-expand-sm "style="background-color: #000137;">
   <a class="navbar-brand" href="../accueil/accueil.php" id="image"><img  src="../Header/LogodBs.png" width="200" height="100" id="image"/></a>
 	
