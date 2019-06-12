@@ -27,7 +27,7 @@
 	</button>
       
       <li class="nav-item">
-        <a class="nav-link" href="../Contacts/contacts.php">Page de contacts</a>
+        <a class="nav-link" href="../Contacts/contacts.php">Contacts</a>
       </li>
 <!--      <li class="nav-item">
         <a class="nav-link" href="../Mentions-legales/Mentions-legales.php">Mentions légales</a>
