@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <HEAD>
+<?php session_start(); ?>
  <!-- Session pour utiliser des variables globales -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

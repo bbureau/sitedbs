@@ -150,7 +150,7 @@ $req->closeCursor();
 <div id="calendar" class="calendar"><script>new Calendar('#calendar', Loca, nb_dispo);</script></div>
 <!--  Maintenant passons au formulaire de réservation -->
 <div class = "Formulaire">
-<?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .' style="font-family:Helvetica">' ?>
+<?php echo '<form method = "post" action = "PageArticle.php?ID=' . $donnees['ID'] .'" style="font-family:Helvetica">' ?>
 <label for= "Date_Debut"> Date de début de réservation </label> : <input type = "date" name="Date_Debut" id = "Date_Debut" placeholder="jj/mm/aaaa" required/></br>
 <label for= "Date_Fin"> Date de fin de réservation </label> : &nbsp;&nbsp;&nbsp;&nbsp;   <input type = "date" name="Date_Fin" id = "Date_Fin" placeholder="jj/mm/aaaa" required/></br>
 <input type="submit" class="AjoutPanier" value="AJOUTER AU PANIER" />

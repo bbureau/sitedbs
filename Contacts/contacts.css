@@ -1,58 +1,65 @@
 body{
 /* /*L'image est positionnée en fond et est centrée */
-background: url(fete2.jpg) no-repeat center center fixed;
+/* background: url(fete2.jpg) no-repeat center center fixed;
 /* /*Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
 -webkit-background-size: cover;
+background-color:black;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
 
 .card{
-	/* /*L'image est positionnée en fond et est centrée */
-background: url(fete2.jpg) no-repeat center center fixed;
+/* /*L'image est positionnée en fond et est centrée */
+
 /* /*Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-box-shadow:none;
-border:0 none;
-outline:0;
+width:125%;
+height:110%;
+margin-top:-15px;
+margin-left: -2px
 }
+
+
 
 .container{
 	box-shadow:none;
 border:0 none;
 outline:0;
+width:100%
 }
 
 .col-xl-12{
 		box-shadow:none;
 border:0 none;
 outline:0;
+width:100%
 }
 	
 
 
 
 .row{
-	margin-top:13%;
+	margin-top:12%;
 	box-shadow:none;
 	border:0 none;
 	outline:0;
+	width:100%
 }
 
 
 #image1{
-	height:100%%;
-	width:20%;
+	height:30%%;
+	width:30%;
 	margin:auto;
 }
 
 #image2{
-	height:100%;
-	width:20%;
+	height:30%;
+	width:30%;
 	margin:auto;
 
 }
@@ -63,16 +70,29 @@ outline:0;
 }
 
 #text{
-	margin-left:10%;
+	margin-left:6.75%;
 	position:absolute;
-	top:30%;
+	top:40%;
 	
-	color:white;
+	
+}
+
+#text2{
+	margin-left:81%;
+	position:absolute;
+	top:40%;
+	
 	
 }
 
 #lettre{
-	position:relative;
+	position: relative;
 }
+
+
+
+
+	
+
 
 

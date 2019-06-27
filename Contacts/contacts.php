@@ -15,34 +15,47 @@
 
 
 		<!-- Page Content -->
-<div class="container">
+<div class="container" style="position:fixed">
   <div class="row">
     <!-- Team Member 1 -->
-    <div class="col-xl-12 col-md-6 mb-6">
-      <div class="card">
-        <img src="Prez_DBS.png" class="card-img-top " alt="..." id="image1">
+    <div style="width:100%">
+      <div class="card" id="Prezcard" style="background:url(joke.jpg)">
+		<h2 id="Prez" style="color:white; margin-top:2%;margin-left:5%"> Julien Guinot </h2>
+		<h4 id="Prez2" style="color:white;margin-left:5%"> Président </h4>
+		<br>
+        <br>
+		<br>
+		<br>
+		<br>
 		
-		<ul class="fa-ul" id="text">
-			<i><span class="fa-li fa fa-phone fa-lg" aria-hidden="true" ></span>Telephone:xxxxxxxxxx</i><br>
-			<i><span class="fa-li fa fa-envelope" aria-hidden="true" id="lettre"></span>Adresse mail: xxxxxxxxxxx </i>
+		<br>
+        <ul class="fa-ul" id="text" style="color:white">
+			<i><span class="fa fa-li fa-phone fa-lg" aria-hidden="true" ></span>06 82 07 01 17</i><br>
+			<i><span class="fa fa-li fa-envelope" aria-hidden="true" id="lettre"></span>julien.guinot@ecl18.ec-lyon.fr </i>
 		</ul>
-		
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Président</h5>
           <div class="card-text text-black-50"></div>
         </div>
       </div>
     </div>
     <!-- Team Member 2 -->
-    <div class="col-xl-12 col-md-6 mb-6">
-      <div class="card border-0 shadow">
-        <img src="SG_DBS.jpg" class="card-img-top" alt="..." id="image2">
-        <ul class="fa-ul" id="text">
-			<i><span class="fa fa-li fa-phone fa-lg" aria-hidden="true" ></span>Telephone:xxxxxxxxxx</i><br>
-			<i><span class="fa fa-li fa-envelope" aria-hidden="true" id="lettre"></span>Adresse mail: xxxxxxxxxxx </i>
+    <div style="width:100%; text-align:right; margin-right:10px; width:170%">
+      <div class="card" style="background:url(tchekoh.jpg); ">
+		<h2 style="color:Black; margin-top:2%;margin-right:2%;color:white"> Paul Flagel </h2>
+		<h4 style="color:Black;margin-right:2%;color:white"> Secrétaire Général Matos </h4>		
+		<br>
+		<br>
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+        <ul class="fa-ul" id="text2" style="color:white; text-align:right" >
+
+			<i><span class="fa fa-li fa-phone fa-lg" aria-hidden="true" ></span>00 00 00 00 00</i><br>
+			<i><span class="fa fa-li fa-envelope" aria-hidden="true" id="lettre"></span>paul.flager@ecl18.ec-lyon.fr </i>
 		</ul>
         <div class="card-body text-center">
-          <h5 class="card-title mb-0">Secrétaire Général</h5>
           <div class="card-text text-black-50"></div>
         </div>
       </div>
